@@ -1,0 +1,68 @@
+@import "../../../App.scss";
+
+@mixin flex($d, $j, $a) {
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin djflex($d, $j) {
+  display: ($d);
+  justify-content: ($j);
+}
+
+@mixin daflex($d, $a) {
+  display: ($d);
+  align-items: ($a);
+}
+
+@mixin border($direction, $width, $style, $color) {
+  border-#{$direction}: $width $style $color;
+}
+
+@mixin bor($px, $sol, $col) {
+  border-style: ($sol);
+  border-width: ($px);
+  border-color: ($col);
+}
+
+// ---------------------------
+
+#PortMain {
+  @include flex(flex, center, center);
+
+  article {
+    max-width: 100rem;
+    height: auto !important;
+    padding: 0;
+    margin: 0;
+    @include flex(flex, center, center);
+  }
+
+  .MainWrapper {
+    position: absolute;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    flex-direction: column;
+    @include flex(flex, center, center);
+  }
+
+  .MainFocus {
+    text-transform: uppercase;
+    font-family: "PressStart2P-Regular";
+    font-weight: bold;
+    letter-spacing: 8px;
+    font-size: 3rem;
+    color: #afafaf;
+    flex-direction: column;
+    margin: 2rem auto;
+    filter: blur(1.5px);
+    @include flex(flex, center, center);
+  }
+
+  .MainFocus:hover {
+    color: red;
+    filter: blur(0);
+  }
+}

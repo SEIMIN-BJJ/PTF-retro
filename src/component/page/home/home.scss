@@ -1,0 +1,137 @@
+@import "../../../App.scss";
+
+@mixin flex($d, $j, $a) {
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin djflex($d, $j) {
+  display: ($d);
+  justify-content: ($j);
+}
+
+@mixin daflex($d, $a) {
+  display: ($d);
+  align-items: ($a);
+}
+
+@mixin border($direction, $width, $style, $color) {
+  border-#{$direction}: $width $style $color;
+}
+
+@mixin bor($px, $sol, $col) {
+  border-style: ($sol);
+  border-width: ($px);
+  border-color: ($col);
+}
+
+// ---------------------------
+
+$target: rgb(255, 255, 255);
+body {
+  background-color: #212121;
+  z-index: 1;
+  @include flex(flex, center, center);
+}
+
+.wrapper {
+  position: absolute;
+  left: 21%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 70px;
+  white-space: nowrap;
+  @include flex(flex, center, center);
+}
+
+.focus {
+  top: 50%;
+  left: -150%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-family: "PressStart2P-Regular";
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  opacity: 0.6;
+  color: #afafaf;
+  position: absolute;
+  flex-direction: column;
+  filter: blur(1.5px);
+  @include flex(flex, center, center);
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    @include flex(flex, center, center);
+  }
+}
+
+.mask {
+  width: 5rem;
+  height: 50px;
+  left: auto;
+  top: -2.6rem;
+  font-family: "PressStart2P-Regular";
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 3rem;
+  clip: rect(0px, 5rem, 5rem, 0px);
+  background: linear-gradient($target, $target 0) no-repeat,
+    linear-gradient(to right, $target, $target 0) no-repeat,
+    linear-gradient(to right, $target, $target 0) bottom left no-repeat,
+    linear-gradient(to right, $target, $target 0) bottom left no-repeat,
+    linear-gradient($target, $target 0) bottom right no-repeat,
+    linear-gradient($target, $target 0) bottom right no-repeat,
+    linear-gradient($target, $target 0) top right no-repeat,
+    linear-gradient($target, $target 0) top right no-repeat;
+
+  background-size: 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px,
+    10px 3px, 10px 3px, 10px 3px;
+  transform: translateX(0);
+  box-sizing: border-box;
+  animation: mask 3s ease infinite alternate;
+  color: yellow;
+
+  .text {
+    // transform: translateX(0);
+    animation: text 3s ease infinite alternate;
+  }
+}
+.textPress {
+  font-size: 3rem;
+  position: absolute;
+  text-align: center;
+  font-family: "PressStart2P-Regular";
+  letter-spacing: 2px;
+  margin: 1.3rem 11rem;
+  text-transform: uppercase;
+  color: yellow;
+  animation: textPress 0.4s ease infinite alternate;
+  @include flex(flex, center, center);
+}
+
+@keyframes mask {
+  to {
+    transform: translateX(51rem);
+  }
+}
+
+@keyframes text {
+  to {
+    transform: translateX(-49rem);
+  }
+}
+
+@keyframes textPress {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

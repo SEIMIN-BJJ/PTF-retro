@@ -1,0 +1,29 @@
+@import "../../App.scss";
+
+@mixin flex($d, $j, $a) {
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin djflex($d, $j) {
+  display: ($d);
+  justify-content: ($j);
+}
+
+@mixin daflex($d, $a) {
+  display: ($d);
+  align-items: ($a);
+}
+
+@mixin border($direction, $width, $style, $color) {
+  border-#{$direction}: $width $style $color;
+}
+
+@mixin bor($px, $sol, $col) {
+  border-style: ($sol);
+  border-width: ($px);
+  border-color: ($col);
+}
+
+// ---------------------------
