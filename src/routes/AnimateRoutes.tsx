@@ -4,7 +4,6 @@ import Home from '../component/page/home/home';
 import Main from '../component/page/main/main';
 import IntroDuce from '../component/page/introduce/IntroDuce';
 import Work from '../component/page/work/Work';
-import Skill from '../component/page/skill/Skill';
 import Contact from '../component/page/contact/Contact';
 
 function AnimateRoutes() {
@@ -17,7 +16,6 @@ function AnimateRoutes() {
         <Route path="/main" element={<Main />}></Route>
         <Route path="/introduce" element={<IntroDuce />}></Route>
         <Route path="/work" element={<Work />}></Route>
-        <Route path="/skill" element={<Skill />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </AnimatePresence>

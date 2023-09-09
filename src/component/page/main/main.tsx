@@ -18,12 +18,7 @@ const mainRoute = [
 
   },
   {
-    title: "4.skill",
-    route: "/skill",
-
-  },
-  {
-    title: "5.contact",
+    title: "4.contact",
     route: "/contact",
 
   }
@@ -38,7 +33,7 @@ const Main = () => {
         <article>
           <motion.div
             className="MainWrapper"
-            initial={{ y: "25%", opacity: 1 }}
+            initial={{ y: "30%", opacity: 1 }}
             animate={{ paddingTop: "20%" }}
             transition={{
               ease: "linear",
