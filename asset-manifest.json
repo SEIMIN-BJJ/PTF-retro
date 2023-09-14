@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PTF-retro/static/css/main.f526ff81.css",
-    "main.js": "/PTF-retro/static/js/main.66439d4c.js",
+    "main.css": "/PTF-retro/static/css/main.c27c9cdb.css",
+    "main.js": "/PTF-retro/static/js/main.483e0913.js",
     "static/js/787.cf905a28.chunk.js": "/PTF-retro/static/js/787.cf905a28.chunk.js",
     "static/media/Pretendard-Thin.ttf": "/PTF-retro/static/media/Pretendard-Thin.7aca4915b135693704c6.ttf",
     "static/media/Pretendard-ExtraLight.ttf": "/PTF-retro/static/media/Pretendard-ExtraLight.50a2b2a1b0307c05712d.ttf",
@@ -17,12 +17,12 @@
     "static/media/GmarketSansTTFLight.ttf": "/PTF-retro/static/media/GmarketSansTTFLight.efaa8f19ead1555b1c39.ttf",
     "static/media/PressStart2P-Regular.ttf": "/PTF-retro/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
     "index.html": "/PTF-retro/index.html",
-    "main.f526ff81.css.map": "/PTF-retro/static/css/main.f526ff81.css.map",
-    "main.66439d4c.js.map": "/PTF-retro/static/js/main.66439d4c.js.map",
+    "main.c27c9cdb.css.map": "/PTF-retro/static/css/main.c27c9cdb.css.map",
+    "main.483e0913.js.map": "/PTF-retro/static/js/main.483e0913.js.map",
     "787.cf905a28.chunk.js.map": "/PTF-retro/static/js/787.cf905a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f526ff81.css",
-    "static/js/main.66439d4c.js"
+    "static/css/main.c27c9cdb.css",
+    "static/js/main.483e0913.js"
   ]
 }
