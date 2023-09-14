@@ -27,3 +27,25 @@
 }
 
 // ---------------------------
+
+#IntroDuceRoot {
+  max-width: 100rem;
+  height: auto !important;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  @include flex(flex, center, center);
+
+  .SectionPicture {
+    width: 40rem;
+    height: 30rem;
+    border: 1px solid #fff;
+    margin: 0 4ch 0 0;
+  }
+
+  .SectionInfo {
+    width: 40rem;
+    height: 30rem;
+    border: 1px solid #fff;
+  }
+}

@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "https://seimin-bjj.github.io/PTF-retro/static/css/main.120ab26f.css",
-    "main.js": "https://seimin-bjj.github.io/PTF-retro/static/js/main.fb065ac7.js",
-    "static/js/787.cf905a28.chunk.js": "https://seimin-bjj.github.io/PTF-retro/static/js/787.cf905a28.chunk.js",
-    "static/media/Pretendard-Thin.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/Pretendard-Thin.7aca4915b135693704c6.ttf",
-    "static/media/Pretendard-ExtraLight.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/Pretendard-ExtraLight.50a2b2a1b0307c05712d.ttf",
-    "static/media/Pretendard-Light.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/Pretendard-Light.3711e13d79704d388100.ttf",
-    "static/media/Pretendard-Regular.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/Pretendard-Regular.7c20008ec8c0968904c4.ttf",
-    "static/media/Pretendard-Medium.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/Pretendard-Medium.a55315616a247a625bea.ttf",
-    "static/media/Pretendard-SemiBold.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/Pretendard-SemiBold.224f934d4160c1ea26e2.ttf",
-    "static/media/Pretendard-ExtraBold.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/Pretendard-ExtraBold.7ca47a8c0824d1f740dc.ttf",
-    "static/media/Pretendard-Black.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/Pretendard-Black.75e134da01d227c7a3a8.ttf",
-    "static/media/Pretendard-Bold.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/Pretendard-Bold.3657cde72d6af8de8bfb.ttf",
-    "static/media/GmarketSansTTFBold.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
-    "static/media/GmarketSansTTFMedium.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/GmarketSansTTFMedium.d4bac6b182bed73c9375.ttf",
-    "static/media/GmarketSansTTFLight.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/GmarketSansTTFLight.efaa8f19ead1555b1c39.ttf",
-    "static/media/PressStart2P-Regular.ttf": "https://seimin-bjj.github.io/PTF-retro/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
-    "index.html": "https://seimin-bjj.github.io/PTF-retro/index.html",
-    "main.120ab26f.css.map": "https://seimin-bjj.github.io/PTF-retro/static/css/main.120ab26f.css.map",
-    "main.fb065ac7.js.map": "https://seimin-bjj.github.io/PTF-retro/static/js/main.fb065ac7.js.map",
-    "787.cf905a28.chunk.js.map": "https://seimin-bjj.github.io/PTF-retro/static/js/787.cf905a28.chunk.js.map"
+    "main.css": "/PTF-retro/static/css/main.f526ff81.css",
+    "main.js": "/PTF-retro/static/js/main.66439d4c.js",
+    "static/js/787.cf905a28.chunk.js": "/PTF-retro/static/js/787.cf905a28.chunk.js",
+    "static/media/Pretendard-Thin.ttf": "/PTF-retro/static/media/Pretendard-Thin.7aca4915b135693704c6.ttf",
+    "static/media/Pretendard-ExtraLight.ttf": "/PTF-retro/static/media/Pretendard-ExtraLight.50a2b2a1b0307c05712d.ttf",
+    "static/media/Pretendard-Light.ttf": "/PTF-retro/static/media/Pretendard-Light.3711e13d79704d388100.ttf",
+    "static/media/Pretendard-Regular.ttf": "/PTF-retro/static/media/Pretendard-Regular.7c20008ec8c0968904c4.ttf",
+    "static/media/Pretendard-Medium.ttf": "/PTF-retro/static/media/Pretendard-Medium.a55315616a247a625bea.ttf",
+    "static/media/Pretendard-SemiBold.ttf": "/PTF-retro/static/media/Pretendard-SemiBold.224f934d4160c1ea26e2.ttf",
+    "static/media/Pretendard-ExtraBold.ttf": "/PTF-retro/static/media/Pretendard-ExtraBold.7ca47a8c0824d1f740dc.ttf",
+    "static/media/Pretendard-Black.ttf": "/PTF-retro/static/media/Pretendard-Black.75e134da01d227c7a3a8.ttf",
+    "static/media/Pretendard-Bold.ttf": "/PTF-retro/static/media/Pretendard-Bold.3657cde72d6af8de8bfb.ttf",
+    "static/media/GmarketSansTTFBold.ttf": "/PTF-retro/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
+    "static/media/GmarketSansTTFMedium.ttf": "/PTF-retro/static/media/GmarketSansTTFMedium.d4bac6b182bed73c9375.ttf",
+    "static/media/GmarketSansTTFLight.ttf": "/PTF-retro/static/media/GmarketSansTTFLight.efaa8f19ead1555b1c39.ttf",
+    "static/media/PressStart2P-Regular.ttf": "/PTF-retro/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
+    "index.html": "/PTF-retro/index.html",
+    "main.f526ff81.css.map": "/PTF-retro/static/css/main.f526ff81.css.map",
+    "main.66439d4c.js.map": "/PTF-retro/static/js/main.66439d4c.js.map",
+    "787.cf905a28.chunk.js.map": "/PTF-retro/static/js/787.cf905a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.120ab26f.css",
-    "static/js/main.fb065ac7.js"
+    "static/css/main.f526ff81.css",
+    "static/js/main.66439d4c.js"
   ]
 }
