@@ -36,16 +36,19 @@
   text-align: center;
   @include flex(flex, center, center);
 
-  .SectionPicture {
-    width: 40rem;
-    height: 30rem;
-    border: 1px solid #fff;
-    margin: 0 4ch 0 0;
-  }
-
   .SectionInfo {
     width: 40rem;
     height: 30rem;
-    border: 1px solid #fff;
+    border: 5px solid #fff;
+    margin: 0 2rem 0 0;
+    color: #fff;
+    text-align: center;
+    @include flex(flex, center, center);
+  }
+
+  .SectionInfo:hover {
+    border-color: red;
+    cursor: pointer;
+    filter: blur(0);
   }
 }
