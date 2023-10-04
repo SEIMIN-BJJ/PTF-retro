@@ -14,11 +14,12 @@ const Home = () => {
         transition={{
           ease: "linear",
           duration: 1,
-          x: { duration: 1 }
+          y: { duration: 0 }
         }}
         exit={{ y: window.innerHeight, opacity: 0 }}
       >
-        <Link to="/mainfirst">
+        {/* <Link to="/mainfirst"> */}
+        <Link to="/mainsecond">
           <div className="focus">SEIMIN's PORTFOLIO
             <br />
             <br />

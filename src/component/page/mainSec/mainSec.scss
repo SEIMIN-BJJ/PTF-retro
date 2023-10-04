@@ -38,32 +38,32 @@
     margin: 0;
     text-align: center;
     @include flex(flex, center, center);
-  }
 
-  .MainWrapper {
-    position: absolute;
-    width: auto;
-    height: auto;
-    white-space: nowrap;
-    flex-direction: column;
-    @include flex(flex, center, center);
-  }
+    .mainBack {
+      width: 100rem;
+      height: auto;
+      background-color: #5d93fd;
+      flex-direction: column;
+      @include flex(flex, center, center);
+      @include bor(1px, solid, black);
 
-  .MainFocus {
-    text-transform: uppercase;
-    font-family: "PressStart2P-Regular";
-    font-weight: bold;
-    letter-spacing: 8px;
-    font-size: 3rem;
-    color: #afafaf;
-    flex-direction: column;
-    margin: 2rem auto;
-    filter: blur(1.5px);
-    @include flex(flex, center, center);
-  }
+      header {
+        width: 100rem;
+        height: 5rem;
+        @include bor(1px, solid, black);
+      }
 
-  .MainFocus:hover {
-    color: red;
-    filter: blur(0);
+      main {
+        width: 100rem;
+        height: 37rem;
+        @include bor(1px, solid, black);
+      }
+
+      footer {
+        width: 100rem;
+        height: 6rem;
+        @include bor(1px, solid, black);
+      }
+    }
   }
 }
