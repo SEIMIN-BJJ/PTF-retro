@@ -6,7 +6,7 @@ import "./IntroDuce.scss"
 const Introduce = [
   {
     title: "main",
-    route: "/main"
+    route: "/mainfirst"
   }
 ]
 

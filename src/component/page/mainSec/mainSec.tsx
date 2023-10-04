@@ -1,5 +1,5 @@
 import React from "react";
-import "./main.scss";
+import "./mainSec.scss";
 import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 
@@ -24,7 +24,7 @@ const mainRoute = [
   }
 ]
 
-const Main = () => {
+const MainSecond = () => {
   const navigate = useNavigate();
 
   return (
@@ -56,6 +56,6 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainSecond;
 
 

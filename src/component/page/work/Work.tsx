@@ -1,12 +1,12 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
-import "../main/main.scss"
+import "../mainFirst/mainFirst.scss"
 
 const WorkMenu = [
   {
     title: "1.main",
-    route: "/main"
+    route: "/mainfirst"
   }
 ]
 

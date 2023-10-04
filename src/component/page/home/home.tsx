@@ -18,7 +18,7 @@ const Home = () => {
         }}
         exit={{ y: window.innerHeight, opacity: 0 }}
       >
-        <Link to="/main">
+        <Link to="/mainfirst">
           <div className="focus">SEIMIN's PORTFOLIO
             <br />
             <br />
