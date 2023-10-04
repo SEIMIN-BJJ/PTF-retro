@@ -164,7 +164,7 @@ section {
 }
 #PortMain article .mainBack main {
   width: 100rem;
-  height: 37rem;
+  height: 40rem;
   border-style: solid;
   border-width: 1px;
   border-color: black;
@@ -172,6 +172,13 @@ section {
 #PortMain article .mainBack footer {
   width: 100rem;
   height: 6rem;
+  background-image: url("../../../../public/block.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-style: solid;
   border-width: 1px;
   border-color: black;

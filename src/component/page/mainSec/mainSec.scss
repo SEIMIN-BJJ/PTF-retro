@@ -55,13 +55,18 @@
 
       main {
         width: 100rem;
-        height: 37rem;
+        height: 40rem;
         @include bor(1px, solid, black);
       }
 
       footer {
         width: 100rem;
         height: 6rem;
+        background-image: url("../../../../public/block.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        @include flex(flex, center, center);
         @include bor(1px, solid, black);
       }
     }
