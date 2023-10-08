@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PTF-retro/static/css/main.fa15429c.css",
-    "main.js": "/PTF-retro/static/js/main.ecd4485e.js",
+    "main.css": "/PTF-retro/static/css/main.cfa0314b.css",
+    "main.js": "/PTF-retro/static/js/main.025c7041.js",
     "static/js/787.cf905a28.chunk.js": "/PTF-retro/static/js/787.cf905a28.chunk.js",
     "static/media/Pretendard-Thin.ttf": "/PTF-retro/static/media/Pretendard-Thin.7aca4915b135693704c6.ttf",
     "static/media/Pretendard-ExtraLight.ttf": "/PTF-retro/static/media/Pretendard-ExtraLight.50a2b2a1b0307c05712d.ttf",
@@ -16,14 +16,15 @@
     "static/media/GmarketSansTTFMedium.ttf": "/PTF-retro/static/media/GmarketSansTTFMedium.d4bac6b182bed73c9375.ttf",
     "static/media/GmarketSansTTFLight.ttf": "/PTF-retro/static/media/GmarketSansTTFLight.efaa8f19ead1555b1c39.ttf",
     "static/media/PressStart2P-Regular.ttf": "/PTF-retro/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
+    "static/media/me.png": "/PTF-retro/static/media/me.a696c4a41c92a0c8d8ca.png",
     "static/media/block.png": "/PTF-retro/static/media/block.8019d5884fddab01cab2.png",
     "index.html": "/PTF-retro/index.html",
-    "main.fa15429c.css.map": "/PTF-retro/static/css/main.fa15429c.css.map",
-    "main.ecd4485e.js.map": "/PTF-retro/static/js/main.ecd4485e.js.map",
+    "main.cfa0314b.css.map": "/PTF-retro/static/css/main.cfa0314b.css.map",
+    "main.025c7041.js.map": "/PTF-retro/static/js/main.025c7041.js.map",
     "787.cf905a28.chunk.js.map": "/PTF-retro/static/js/787.cf905a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa15429c.css",
-    "static/js/main.ecd4485e.js"
+    "static/css/main.cfa0314b.css",
+    "static/js/main.025c7041.js"
   ]
 }
