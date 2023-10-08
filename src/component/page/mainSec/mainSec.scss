@@ -34,8 +34,6 @@
   article {
     max-width: 100rem;
     height: auto !important;
-    padding: 0;
-    margin: 0;
     text-align: center;
     @include flex(flex, center, center);
 
@@ -48,74 +46,75 @@
       background-repeat: no-repeat;
       background-size: auto;
       @include flex(flex, center, center);
-    }
-    header {
-      height: 5rem;
-      color: #fff;
-      letter-spacing: 0.3rem;
-      @include flex(flex, center, center);
-    }
 
-    .headMenu {
-      height: auto;
-      font-family: "PressStart2P-Regular";
-      cursor: pointer;
-      @include flex(flex, center, center);
-    }
-
-    li {
-      margin: 0 3rem;
-    }
-
-    li:hover {
-      color: yellow;
-      opacity: 1;
-    }
-
-    main {
-      height: auto !important;
-    }
-
-    .MainInfo {
-      width: 100rem;
-      height: 40rem;
-      color: #fff;
-
-      @include flex(flex, space-between, center);
-
-      div {
-        width: 50rem;
-        height: 30rem;
-      }
-
-      .MainPic {
-        background-image: url(../../../../public/me.png);
-        background-position: center center;
-        background-repeat: no-repeat;
+      header {
+        width: 100rem;
+        height: 5rem;
+        color: #fff;
+        letter-spacing: 0.3rem;
         @include flex(flex, center, center);
       }
 
-      .MainText {
-        text-align: left;
-        font-size: 1.7rem;
+      .headMenu {
         font-family: "PressStart2P-Regular";
-        color: white;
         cursor: pointer;
-        @include flex(flex, center, center);
       }
 
-      .MainText:hover {
+      li {
+        margin: 0 3rem;
+      }
+
+      li:hover {
         color: yellow;
       }
-    }
 
-    footer {
-      width: 100rem;
-      height: 3rem;
-      background-image: url("../../../../public/block.png");
-      background-size: contain;
-      background-position: center center;
-      @include flex(flex, center, center);
+      main {
+        width: 100rem;
+        height: 40rem;
+      }
+
+      .MainInfo {
+        width: 100rem;
+        height: 37rem;
+        color: #fff;
+
+        @include flex(flex, space-between, center);
+
+        div {
+          width: 50rem;
+          height: 30rem;
+        }
+
+        .MainPic {
+          margin-left: 10rem;
+          background-image: url(../../../../public/me.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+          @include flex(flex, center, center);
+        }
+
+        .MainText {
+          font-size: 2rem;
+          margin-right: 10rem;
+          text-align: left;
+          font-family: "PressStart2P-Regular";
+          cursor: pointer;
+          @include flex(flex, center, center);
+        }
+
+        .MainText:hover {
+          color: yellow;
+        }
+      }
+
+      footer {
+        width: 100rem;
+        height: 3rem;
+        background-image: url("../../../../public/block.png");
+        background-size: contain;
+        background-position: center center;
+        @include flex(flex, center, center);
+      }
     }
   }
 }

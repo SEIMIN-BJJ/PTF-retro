@@ -136,8 +136,6 @@ section {
 #PortMain article {
   max-width: 100rem;
   height: auto !important;
-  padding: 0;
-  margin: 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -155,7 +153,8 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain article header {
+#PortMain article .mainBack header {
+  width: 100rem;
   height: 5rem;
   color: #fff;
   letter-spacing: 0.3rem;
@@ -163,37 +162,34 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain article .headMenu {
-  height: auto;
+#PortMain article .mainBack .headMenu {
   font-family: "PressStart2P-Regular";
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-#PortMain article li {
+#PortMain article .mainBack li {
   margin: 0 3rem;
 }
-#PortMain article li:hover {
+#PortMain article .mainBack li:hover {
   color: yellow;
-  opacity: 1;
 }
-#PortMain article main {
-  height: auto !important;
-}
-#PortMain article .MainInfo {
+#PortMain article .mainBack main {
   width: 100rem;
   height: 40rem;
+}
+#PortMain article .mainBack .MainInfo {
+  width: 100rem;
+  height: 37rem;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#PortMain article .MainInfo div {
+#PortMain article .mainBack .MainInfo div {
   width: 50rem;
   height: 30rem;
 }
-#PortMain article .MainInfo .MainPic {
+#PortMain article .mainBack .MainInfo .MainPic {
+  margin-left: 10rem;
   background-image: url(../../../../public/me.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -201,20 +197,20 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain article .MainInfo .MainText {
+#PortMain article .mainBack .MainInfo .MainText {
+  font-size: 2rem;
+  margin-right: 10rem;
   text-align: left;
-  font-size: 1.7rem;
   font-family: "PressStart2P-Regular";
-  color: white;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#PortMain article .MainInfo .MainText:hover {
+#PortMain article .mainBack .MainInfo .MainText:hover {
   color: yellow;
 }
-#PortMain article footer {
+#PortMain article .mainBack footer {
   width: 100rem;
   height: 3rem;
   background-image: url("../../../../public/block.png");

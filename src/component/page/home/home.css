@@ -158,11 +158,11 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 3rem;
-  opacity: 0.9;
+  opacity: 0.8;
   color: #ffffff;
   position: absolute;
   flex-direction: column;
-  filter: blur(1.3px);
+  filter: blur(1.5px);
   display: flex;
   justify-content: center;
   align-items: center;
