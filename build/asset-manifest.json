@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PTF-retro/static/css/main.cfa0314b.css",
-    "main.js": "/PTF-retro/static/js/main.025c7041.js",
+    "main.css": "/PTF-retro/static/css/main.c489cd35.css",
+    "main.js": "/PTF-retro/static/js/main.18c5a33d.js",
     "static/js/787.cf905a28.chunk.js": "/PTF-retro/static/js/787.cf905a28.chunk.js",
     "static/media/Pretendard-Thin.ttf": "/PTF-retro/static/media/Pretendard-Thin.7aca4915b135693704c6.ttf",
     "static/media/Pretendard-ExtraLight.ttf": "/PTF-retro/static/media/Pretendard-ExtraLight.50a2b2a1b0307c05712d.ttf",
@@ -19,12 +19,12 @@
     "static/media/me.png": "/PTF-retro/static/media/me.a696c4a41c92a0c8d8ca.png",
     "static/media/block.png": "/PTF-retro/static/media/block.8019d5884fddab01cab2.png",
     "index.html": "/PTF-retro/index.html",
-    "main.cfa0314b.css.map": "/PTF-retro/static/css/main.cfa0314b.css.map",
-    "main.025c7041.js.map": "/PTF-retro/static/js/main.025c7041.js.map",
+    "main.c489cd35.css.map": "/PTF-retro/static/css/main.c489cd35.css.map",
+    "main.18c5a33d.js.map": "/PTF-retro/static/js/main.18c5a33d.js.map",
     "787.cf905a28.chunk.js.map": "/PTF-retro/static/js/787.cf905a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfa0314b.css",
-    "static/js/main.025c7041.js"
+    "static/css/main.c489cd35.css",
+    "static/js/main.18c5a33d.js"
   ]
 }

@@ -77,7 +77,6 @@
         width: 100rem;
         height: 37rem;
         color: #fff;
-
         @include flex(flex, space-between, center);
 
         div {
@@ -86,7 +85,7 @@
         }
 
         .MainPic {
-          margin-left: 10rem;
+          margin-left: 7rem;
           background-image: url(../../../../public/me.png);
           background-position: center center;
           background-repeat: no-repeat;

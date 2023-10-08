@@ -5,6 +5,22 @@ import { useNavigate } from 'react-router-dom';
 
 // import { useNavigate } from 'react-router-dom';
 
+const transition = {
+  duration: 2,
+  ease: [0.6, -0.05, 0.01, 0.9],
+}
+
+const textReveal = {
+  initial: {
+    x: "200%",
+    opacity: 0,
+  },
+  animate: {
+    x: "0%",
+    opacity: 1,
+  },
+};
+
 const mainSecRoute = [
   {
     title: "Home",
@@ -48,17 +64,36 @@ const MainSecond = () => {
                 {mainSecRoute.map((sec, index) => {
                   return (
                     <>
-                      <ul className="headMenu">
-                        <li onClick={() => navigate(sec.route)}>{sec.title}</li>
-                      </ul>
+                      <motion.div
+                        variants={textReveal}
+                        initial="initial"
+                        animate="animate"
+                        transition={transition}>
+                        <ul className="headMenu">
+                          <li onClick={() => navigate(sec.route)}>{sec.title}</li>
+                        </ul>
+                      </motion.div>
+
                     </>
                   );
                 })}
               </header>
               <main>
                 <div className="MainInfo">
-                  <div className="MainPic"></div>
-                  <div className="MainText">welcome to <br /><br />my portfolio!<br /><br /><br />my name is <br /><br />lim sung min,<br /><br /><br />i'm web publisher,<br /><br /><br />please, look around!</div>
+                  <motion.div
+                    variants={textReveal}
+                    initial="initial"
+                    animate="animate"
+                    transition={transition}>
+                    <div className="MainPic"></div>
+                  </motion.div>
+                  <motion.div
+                    variants={textReveal}
+                    initial="initial"
+                    animate="animate"
+                    transition={transition}>
+                    <div className="MainText">welcome to <br /><br />my portfolio!<br /><br /><br />my name is <br /><br />lim sung min,<br /><br /><br />i'm web publisher,<br /><br /><br />please, look around!</div>
+                  </motion.div>
                 </div>
               </main>
               <footer></footer>
