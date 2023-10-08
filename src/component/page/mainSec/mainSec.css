@@ -189,7 +189,7 @@ section {
   height: 30rem;
 }
 #PortMain article .mainBack .MainInfo .MainPic {
-  margin-left: 7rem;
+  margin-left: 8rem;
   background-image: url(../../../../public/me.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -199,7 +199,7 @@ section {
 }
 #PortMain article .mainBack .MainInfo .MainText {
   font-size: 2rem;
-  margin-right: 15rem;
+  margin-left: -4rem;
   text-align: left;
   font-family: "PressStart2P-Regular";
   cursor: pointer;
