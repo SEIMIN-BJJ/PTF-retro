@@ -42,54 +42,80 @@
     .mainBack {
       width: 100rem;
       height: auto !important;
-      background-color: #5d93fd;
       flex-direction: column;
       text-transform: uppercase;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: auto;
       @include flex(flex, center, center);
+    }
+    header {
+      height: 5rem;
+      color: #fff;
+      letter-spacing: 0.3rem;
+      @include flex(flex, center, center);
+    }
 
-      header {
-        width: 100rem;
-        height: 5rem;
-        color: #fff;
-        letter-spacing: 0.3rem;
+    .headMenu {
+      height: auto;
+      font-family: "PressStart2P-Regular";
+      cursor: pointer;
+      @include flex(flex, center, center);
+    }
+
+    li {
+      margin: 0 3rem;
+    }
+
+    li:hover {
+      color: yellow;
+      opacity: 1;
+    }
+
+    main {
+      height: auto !important;
+    }
+
+    .MainInfo {
+      width: 100rem;
+      height: 40rem;
+      color: #fff;
+
+      @include flex(flex, space-between, center);
+
+      div {
+        width: 50rem;
+        height: 30rem;
+      }
+
+      .MainPic {
+        background-image: url(../../../../public/me.png);
+        background-position: center center;
+        background-repeat: no-repeat;
         @include flex(flex, center, center);
       }
 
-      .headMenu {
+      .MainText {
+        text-align: left;
+        font-size: 1.7rem;
         font-family: "PressStart2P-Regular";
-        transition: 1s;
+        color: white;
         cursor: pointer;
         @include flex(flex, center, center);
       }
 
-      li {
-        margin: 0 5rem;
-      }
-
-      li:hover {
+      .MainText:hover {
         color: yellow;
-        opacity: 1;
       }
+    }
 
-      main {
-        width: 100rem;
-        height: 40rem;
-
-        .MainInfo {
-          width: 100rem;
-          height: 40rem;
-          @include flex(flex, space-between, center);
-        }
-      }
-
-      footer {
-        width: 100rem;
-        height: 3rem;
-        background-image: url("../../../../public/block.png");
-        background-size: contain;
-        background-position: center center;
-        @include flex(flex, center, center);
-      }
+    footer {
+      width: 100rem;
+      height: 3rem;
+      background-image: url("../../../../public/block.png");
+      background-size: contain;
+      background-position: center center;
+      @include flex(flex, center, center);
     }
   }
 }

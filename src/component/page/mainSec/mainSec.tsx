@@ -22,7 +22,6 @@ const mainSecRoute = [
   {
     title: "contact",
     route: "/contact",
-
   }
 ]
 
@@ -58,6 +57,8 @@ const MainSecond = () => {
               </header>
               <main>
                 <div className="MainInfo">
+                  <div className="MainPic"></div>
+                  <div className="MainText">welcome to <br /><br />my portfolio!<br /><br /><br />my name is <br /><br />lim sung min<br /><br /><br />i'm web publisher<br /><br /><br />please, look around!</div>
                 </div>
               </main>
               <footer></footer>

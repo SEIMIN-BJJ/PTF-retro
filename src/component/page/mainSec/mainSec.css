@@ -146,15 +146,16 @@ section {
 #PortMain article .mainBack {
   width: 100rem;
   height: auto !important;
-  background-color: #5d93fd;
   flex-direction: column;
   text-transform: uppercase;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#PortMain article .mainBack header {
-  width: 100rem;
+#PortMain article header {
   height: 5rem;
   color: #fff;
   letter-spacing: 0.3rem;
@@ -162,33 +163,58 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain article .mainBack .headMenu {
+#PortMain article .headMenu {
+  height: auto;
   font-family: "PressStart2P-Regular";
-  transition: 1s;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#PortMain article .mainBack li {
-  margin: 0 5rem;
+#PortMain article li {
+  margin: 0 3rem;
 }
-#PortMain article .mainBack li:hover {
+#PortMain article li:hover {
   color: yellow;
   opacity: 1;
 }
-#PortMain article .mainBack main {
-  width: 100rem;
-  height: 40rem;
+#PortMain article main {
+  height: auto !important;
 }
-#PortMain article .mainBack main .MainInfo {
+#PortMain article .MainInfo {
   width: 100rem;
   height: 40rem;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#PortMain article .mainBack footer {
+#PortMain article .MainInfo div {
+  width: 50rem;
+  height: 30rem;
+}
+#PortMain article .MainInfo .MainPic {
+  background-image: url(../../../../public/me.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PortMain article .MainInfo .MainText {
+  text-align: left;
+  font-size: 1.7rem;
+  font-family: "PressStart2P-Regular";
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PortMain article .MainInfo .MainText:hover {
+  color: yellow;
+}
+#PortMain article footer {
   width: 100rem;
   height: 3rem;
   background-image: url("../../../../public/block.png");
