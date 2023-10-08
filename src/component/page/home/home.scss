@@ -30,7 +30,7 @@
 
 $target: rgb(255, 255, 255);
 body {
-  background-color: #212121;
+  background-color: #5d93fd;
   z-index: 1;
   @include flex(flex, center, center);
 }
@@ -55,11 +55,11 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 3rem;
-  opacity: 0.6;
-  color: #afafaf;
+  opacity: 0.8;
+  color: #ffffff;
   position: absolute;
   flex-direction: column;
-  filter: blur(1.5px);
+  filter: blur(1px);
   @include flex(flex, center, center);
 
   h1 {

@@ -150,7 +150,18 @@ section {
   align-items: center;
 }
 #IntroDuceRoot .SectionInfo:hover {
-  border-color: red;
+  border-color: yellow;
   cursor: pointer;
   filter: blur(0);
+}
+
+footer {
+  width: 100rem;
+  height: 3rem;
+  background-image: url("../../../../public/block.png");
+  background-size: contain;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

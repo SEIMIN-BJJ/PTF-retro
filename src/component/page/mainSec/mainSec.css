@@ -145,41 +145,56 @@ section {
 }
 #PortMain article .mainBack {
   width: 100rem;
-  height: auto;
+  height: auto !important;
   background-color: #5d93fd;
   flex-direction: column;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
 }
 #PortMain article .mainBack header {
   width: 100rem;
   height: 5rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
+  color: #fff;
+  letter-spacing: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PortMain article .mainBack .headMenu {
+  font-family: "PressStart2P-Regular";
+  transition: 1s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PortMain article .mainBack li {
+  margin: 0 5rem;
+}
+#PortMain article .mainBack li:hover {
+  color: yellow;
+  opacity: 1;
 }
 #PortMain article .mainBack main {
   width: 100rem;
   height: 40rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
+}
+#PortMain article .mainBack main .MainInfo {
+  width: 100rem;
+  height: 40rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #PortMain article .mainBack footer {
   width: 100rem;
-  height: 6rem;
+  height: 3rem;
   background-image: url("../../../../public/block.png");
-  background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
 }

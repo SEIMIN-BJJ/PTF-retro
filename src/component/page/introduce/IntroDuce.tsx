@@ -6,7 +6,7 @@ import "./IntroDuce.scss"
 const Introduce = [
   {
     title: "main",
-    route: "/mainfirst"
+    route: "/mainsecond"
   }
 ]
 
@@ -18,11 +18,11 @@ const IntroDuce = () => {
       <article>
         <motion.div
           className="MainWrapper"
-          initial={{ y: "25%", opacity: 1 }}
+          initial={{ y: "23%", opacity: 1 }}
           animate={{ paddingTop: "20%" }}
           transition={{
             ease: "linear",
-            duration: 1,
+            duration: 0.7,
             y: { duration: 1 }
           }}
           exit={{ y: window.innerHeight, opacity: 0 }}
@@ -34,9 +34,12 @@ const IntroDuce = () => {
                   <div className='SectionInfo'>
                     나의정보
                   </div>
-                  <div className='SectionInfo'></div>
+                  <div className='SectionInfo'>
+                    dfdsf
+                  </div>
                 </div>
-                <button className="MainFocus" style={{ padding: "2rem 0 0 0" }} onClick={() => navigate(work.route)}>{work.title}</button>
+                <button className="MainFocus" style={{ padding: "5rem 0 0 0" }} onClick={() => navigate(work.route)}>{work.title}</button>
+                <footer></footer>
               </>
             );
           })}

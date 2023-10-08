@@ -41,33 +41,54 @@
 
     .mainBack {
       width: 100rem;
-      height: auto;
+      height: auto !important;
       background-color: #5d93fd;
       flex-direction: column;
+      text-transform: uppercase;
       @include flex(flex, center, center);
-      @include bor(1px, solid, black);
 
       header {
         width: 100rem;
         height: 5rem;
-        @include bor(1px, solid, black);
+        color: #fff;
+        letter-spacing: 0.3rem;
+        @include flex(flex, center, center);
+      }
+
+      .headMenu {
+        font-family: "PressStart2P-Regular";
+        transition: 1s;
+        cursor: pointer;
+        @include flex(flex, center, center);
+      }
+
+      li {
+        margin: 0 5rem;
+      }
+
+      li:hover {
+        color: yellow;
+        opacity: 1;
       }
 
       main {
         width: 100rem;
         height: 40rem;
-        @include bor(1px, solid, black);
+
+        .MainInfo {
+          width: 100rem;
+          height: 40rem;
+          @include flex(flex, space-between, center);
+        }
       }
 
       footer {
         width: 100rem;
-        height: 6rem;
+        height: 3rem;
         background-image: url("../../../../public/block.png");
-        background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
         @include flex(flex, center, center);
-        @include bor(1px, solid, black);
       }
     }
   }

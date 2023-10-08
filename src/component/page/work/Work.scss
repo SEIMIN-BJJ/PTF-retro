@@ -27,3 +27,27 @@
 }
 
 // ---------------------------
+
+#PortMain {
+  @include flex(flex, center, center);
+
+  article {
+    max-width: 100rem;
+    height: auto !important;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    @include flex(flex, center, center);
+
+    footer {
+      width: 100rem;
+      margin-bottom: -46rem;
+      position: absolute;
+      background-image: url("../../../../public/block.png");
+      background-size: contain;
+      background-position: center center;
+      @include flex(flex, center, center);
+      @include bor(1px, solid, black);
+    }
+  }
+}

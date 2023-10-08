@@ -143,33 +143,17 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain .MainWrapper {
+#PortMain article footer {
+  width: 100rem;
+  margin-bottom: -46rem;
   position: absolute;
-  width: auto;
-  height: auto;
-  white-space: nowrap;
-  flex-direction: column;
+  background-image: url("../../../../public/block.png");
+  background-size: contain;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#PortMain .MainFocus {
-  width: auto;
-  height: auto;
-  text-transform: uppercase;
-  font-family: "PressStart2P-Regular";
-  font-weight: bold;
-  letter-spacing: 8px;
-  font-size: 3rem;
-  color: #ffffff;
-  flex-direction: column;
-  margin: 2rem auto;
-  filter: blur(1px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#PortMain .MainFocus:hover {
-  color: yellow;
-  filter: blur(0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }

@@ -50,20 +50,22 @@
   }
 
   .MainFocus {
+    width: auto;
+    height: auto;
     text-transform: uppercase;
     font-family: "PressStart2P-Regular";
     font-weight: bold;
     letter-spacing: 8px;
     font-size: 3rem;
-    color: #afafaf;
+    color: #ffffff;
     flex-direction: column;
     margin: 2rem auto;
-    filter: blur(1.5px);
+    filter: blur(1px);
     @include flex(flex, center, center);
   }
 
   .MainFocus:hover {
-    color: red;
+    color: yellow;
     filter: blur(0);
   }
 }
