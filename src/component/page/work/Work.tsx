@@ -69,8 +69,8 @@ const Work = () => {
                     <a className='workText' href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
 
                     <a className='workText' href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a>
-
                   </motion.div>
+
                   <motion.div
                     variants={textReveal}
                     initial="initial"
@@ -78,6 +78,7 @@ const Work = () => {
                     transition={transition}>
                     <div className="workTv">sdfsd</div>
                   </motion.div>
+
                 </div>
               </main>
             </div>

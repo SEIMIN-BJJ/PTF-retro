@@ -136,13 +136,12 @@ section {
 #PortMain article {
   max-width: 100rem;
   height: auto !important;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #PortMain article .mainBack {
-  width: 100rem;
+  width: auto;
   height: auto !important;
   flex-direction: column;
   text-transform: uppercase;
@@ -151,11 +150,11 @@ section {
   align-items: center;
 }
 #PortMain article .mainBack main {
-  width: 100rem;
+  width: auto;
   height: 40rem;
 }
 #PortMain article .mainBack .MainInfo {
-  width: 100rem;
+  width: auto;
   height: 37rem;
   color: #fff;
   border-top: 3px dotted #fff;
@@ -168,9 +167,8 @@ section {
   height: 30rem;
 }
 #PortMain article .mainBack .MainInfo .MainPic {
-  margin: 0 5rem;
   background-image: url(../../../../public/me.png);
-  background-position: center center;
+  background-position: 70% center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -188,5 +186,6 @@ section {
 }
 #PortMain article .mainBack .MainInfo .MainText:hover {
   color: yellow;
+  font-size: 2.1rem;
   opacity: 1;
 }

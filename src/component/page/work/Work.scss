@@ -42,7 +42,7 @@
 
   .workText {
     width: 50rem;
-    height: 8.5rem;
+    height: 8rem;
     color: #fff;
     font-family: "PressStart2P-Regular";
     font-size: 1.4rem;
@@ -50,10 +50,6 @@
     text-align: center;
     opacity: 0.6;
     @include flex(flex, center, center);
-  }
-
-  a {
-    color: #fff;
   }
 
   .workText:hover {
@@ -68,7 +64,6 @@
   }
 
   .workTv {
-    width: 50rem;
     height: 8rem;
     color: #fff;
     border: 1px solid black;
