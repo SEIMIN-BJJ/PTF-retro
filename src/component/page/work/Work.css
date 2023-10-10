@@ -147,11 +147,11 @@ section {
   width: 50rem;
   height: 8.5rem;
   color: #fff;
-  border: 1px solid black;
   font-family: "PressStart2P-Regular";
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
+  opacity: 0.6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,11 +159,11 @@ section {
 #PortMain a {
   color: #fff;
 }
-#PortMain .workMain:hover {
+#PortMain .workText:hover {
   border: 3px solid rgb(255, 255, 255);
   border-radius: 5px;
   color: yellow;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2705882353);
   opacity: 1;
@@ -171,20 +171,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain a:hover {
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  color: yellow;
-  font-size: 1.2rem;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.2705882353);
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.workTv {
+#PortMain .workTv {
   width: 50rem;
   height: 8rem;
   color: #fff;

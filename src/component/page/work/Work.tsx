@@ -59,13 +59,17 @@ const Work = () => {
                     initial="initial"
                     animate="animate"
                     transition={transition}>
-                    <button className="workText">main</button>
-                    <button className="workText">
-                      <a href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a></button>
-                    <button className="workText">
-                      <a href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
-                    </button>
-                    <button className="workText">  <a href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a></button>
+                    <Link to="/mainsecond">
+                      <button className="workText">
+                        main
+                      </button>
+                    </Link>
+                    <a className='workText' href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a>
+
+                    <a className='workText' href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
+
+                    <a className='workText' href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a>
+
                   </motion.div>
                   <motion.div
                     variants={textReveal}
