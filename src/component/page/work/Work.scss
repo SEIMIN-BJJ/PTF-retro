@@ -38,16 +38,54 @@
     margin: 0;
     text-align: center;
     @include flex(flex, center, center);
-
-    footer {
-      width: 100rem;
-      margin-bottom: -46rem;
-      position: absolute;
-      background-image: url("../../../../public/block.png");
-      background-size: contain;
-      background-position: center center;
-      @include flex(flex, center, center);
-      @include bor(1px, solid, black);
-    }
   }
+
+  .workText {
+    width: 50rem;
+    height: 8.5rem;
+    color: #fff;
+    border: 1px solid black;
+    font-family: "PressStart2P-Regular";
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    @include flex(flex, center, center);
+  }
+  a {
+    color: #fff;
+  }
+
+  .workMain:hover {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: yellow;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #ffffff45;
+    opacity: 1;
+    @include flex(flex, center, center);
+  }
+
+  a:hover {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    color: yellow;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #ffffff45;
+    opacity: 1;
+    @include flex(flex, center, center);
+  }
+}
+
+.workTv {
+  width: 50rem;
+  height: 8rem;
+  color: #fff;
+  border: 1px solid black;
+  font-family: "PressStart2P-Regular";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  @include flex(flex, center, center);
 }

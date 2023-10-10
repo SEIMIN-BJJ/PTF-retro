@@ -1,54 +1,90 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
+import Header from '../../block/Header/Header';
+import Footer from '../../block/Footer/Footer';
+import { Link } from 'react-router-dom';
+
 import "./Work.scss"
-const WorkMenu = [
-  {
-    title: "main",
-    route: "/mainsecond"
-  }
-]
 
-const Work = () => {
-  const navigate = useNavigate();
-
-  return (
-    <section id="PortMain">
-      <article>
-        <motion.div
-          className="MainWrapper"
-          initial={{ y: "30%", opacity: 1 }}
-          animate={{ paddingTop: "20%" }}
-          transition={{
-            ease: "linear",
-            duration: 0.7,
-            y: { duration: 1 }
-          }}
-          exit={{ y: window.innerHeight, opacity: 0 }}
-        >
-          {WorkMenu.map((work, index) => {
-            return (
-              <>
-                <button className="MainFocus" onClick={() => navigate(work.route)}>{work.title}</button>
-                <button>
-                  <a href="https://seimin-bjj.github.io/Sound-Novel/" className='MainFocus'>sound novel</a>
-                </button>
-
-                <button>
-                  <a href="https://seimin-bjj.github.io/Rock-Festival/" className='MainFocus'>rock festival</a>
-                </button>
-
-                <button>
-                  <a href="https://seimin-bjj.github.io/Toy-Project/" className='MainFocus'>toy project</a>
-                </button>
-                <footer></footer>
-              </>
-            );
-          })}
-        </motion.div >
-      </article>
-    </section>
-  )
+const transition = {
+  duration: 1.5,
+  ease: [0.6, -0.05, 0.01, 1],
 }
 
+const textReveal = {
+  initial: {
+    x: "200%",
+    opacity: 0,
+  },
+  animate: {
+    x: "00%",
+    opacity: 1,
+  },
+};
+
+const picReveal = {
+  initial: {
+    y: "-200%",
+    opacity: 0,
+  },
+  animate: {
+    y: "00%",
+    opacity: 1,
+  },
+};
+
+const Work = () => {
+
+  return (
+    <>
+      <section id="PortMain">
+        <article>
+          <motion.div
+            className="MainWrapper"
+            initial={{ y: "22%", opacity: 1 }}
+            animate={{ paddingTop: "20%" }}
+            transition={{
+              ease: "linear",
+              duration: 0.7,
+              y: { duration: 1 }
+            }}
+            exit={{ y: window.innerHeight, opacity: 0 }}
+          >
+            <div className="mainBack">
+              <Header />
+              <main>
+                <div className="MainInfo">
+                  <motion.div
+                    variants={picReveal}
+                    initial="initial"
+                    animate="animate"
+                    transition={transition}>
+                    <button className="workText">main</button>
+                    <button className="workText">
+                      <a href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a></button>
+                    <button className="workText">
+                      <a href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
+                    </button>
+                    <button className="workText">  <a href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a></button>
+                  </motion.div>
+                  <motion.div
+                    variants={textReveal}
+                    initial="initial"
+                    animate="animate"
+                    transition={transition}>
+                    <div className="workTv">sdfsd</div>
+                  </motion.div>
+                </div>
+              </main>
+            </div>
+            <Footer />
+          </motion.div >
+        </article >
+      </section >
+    </>
+  );
+};
+
 export default Work;
+
+

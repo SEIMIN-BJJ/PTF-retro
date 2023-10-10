@@ -1,4 +1,4 @@
-@import "../../App.scss";
+@import "../../../App.scss";
 
 @mixin flex($d, $j, $a) {
   display: ($d);
@@ -27,3 +27,13 @@
 }
 
 // ---------------------------
+
+footer {
+  width: 100rem;
+  height: 3rem;
+  position: absolute;
+  background-image: url("../../../../public/block.png");
+  background-size: contain;
+  background-position: center center;
+  @include flex(flex, center, center);
+}

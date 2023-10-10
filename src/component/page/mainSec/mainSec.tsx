@@ -1,8 +1,8 @@
 import React from "react";
 import "./mainSec.scss";
 import { motion } from "framer-motion";
-import { useNavigate } from 'react-router-dom';
-
+import Header from "../../block/Header/Header";
+import Footer from "../../block/Footer/Footer";
 // import { useNavigate } from 'react-router-dom';
 
 const transition = {
@@ -32,28 +32,7 @@ const picReveal = {
   },
 };
 
-const mainSecRoute = [
-  {
-    title: "Home",
-    route: "/",
-  },
-  {
-    title: "i am",
-    route: "/introduce",
-  },
-  {
-    title: "my work",
-    route: "/work",
-
-  },
-  {
-    title: "contact",
-    route: "/contact",
-  }
-]
-
 const MainSecond = () => {
-  const navigate = useNavigate();
 
   return (
     <>
@@ -71,24 +50,7 @@ const MainSecond = () => {
             exit={{ y: window.innerHeight, opacity: 0 }}
           >
             <div className="mainBack">
-              <header>
-                {mainSecRoute.map((sec, index) => {
-                  return (
-                    <>
-                      <motion.div
-                        variants={textReveal}
-                        initial="initial"
-                        animate="animate"
-                        transition={transition}>
-                        <ul className="headMenu">
-                          <li onClick={() => navigate(sec.route)}>{sec.title}</li>
-                        </ul>
-                      </motion.div>
-
-                    </>
-                  );
-                })}
-              </header>
+              <Header />
               <main>
                 <div className="MainInfo">
                   <motion.div
@@ -107,8 +69,8 @@ const MainSecond = () => {
                   </motion.div>
                 </div>
               </main>
-              <footer></footer>
             </div>
+            <Footer />
           </motion.div >
         </article >
       </section >

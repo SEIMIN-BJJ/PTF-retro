@@ -128,65 +128,14 @@ section {
     font-size: 10px !important;
   }
 }
-#PortMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#PortMain article {
-  max-width: 100rem;
-  height: auto !important;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#PortMain article .mainBack {
+footer {
   width: 100rem;
-  height: auto !important;
-  flex-direction: column;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#PortMain article .mainBack main {
-  width: 100rem;
-  height: 40rem;
-}
-#PortMain article .mainBack .MainInfo {
-  width: 100rem;
-  height: 37rem;
-  color: #fff;
-  border-top: 3px dotted #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#PortMain article .mainBack .MainInfo div {
-  width: 50rem;
-  height: 30rem;
-}
-#PortMain article .mainBack .MainInfo .MainPic {
-  margin: 0 5rem;
-  background-image: url(../../../../public/me.png);
+  height: 3rem;
+  position: absolute;
+  background-image: url("../../../../public/block.png");
+  background-size: contain;
   background-position: center center;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#PortMain article .mainBack .MainInfo .MainText {
-  font-size: 2rem;
-  margin: 0 0 0 -5rem;
-  text-align: left;
-  font-family: "PressStart2P-Regular";
-  opacity: 0.6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#PortMain article .mainBack .MainInfo .MainText:hover {
-  color: yellow;
-  opacity: 1;
 }

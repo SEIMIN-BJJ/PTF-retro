@@ -128,65 +128,43 @@ section {
     font-size: 10px !important;
   }
 }
-#PortMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#PortMain article {
-  max-width: 100rem;
-  height: auto !important;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#PortMain article .mainBack {
-  width: 100rem;
-  height: auto !important;
-  flex-direction: column;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#PortMain article .mainBack main {
-  width: 100rem;
-  height: 40rem;
-}
-#PortMain article .mainBack .MainInfo {
-  width: 100rem;
-  height: 37rem;
+header {
+  width: auto;
+  height: 5rem;
   color: #fff;
-  border-top: 3px dotted #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#PortMain article .mainBack .MainInfo div {
-  width: 50rem;
-  height: 30rem;
-}
-#PortMain article .mainBack .MainInfo .MainPic {
-  margin: 0 5rem;
-  background-image: url(../../../../public/me.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#PortMain article .mainBack .MainInfo .MainText {
-  font-size: 2rem;
-  margin: 0 0 0 -5rem;
-  text-align: left;
+  letter-spacing: 0.2rem;
   font-family: "PressStart2P-Regular";
-  opacity: 0.6;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#PortMain article .mainBack .MainInfo .MainText:hover {
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  width: 15rem;
+  height: 3.5rem;
+  padding: 0 3rem 0 3rem;
+  opacity: 0.6;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
   color: yellow;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2705882353);
   opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

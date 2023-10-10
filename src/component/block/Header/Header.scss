@@ -1,4 +1,4 @@
-@import "../../App.scss";
+@import "../../../App.scss";
 
 @mixin flex($d, $j, $a) {
   display: ($d);
@@ -27,3 +27,36 @@
 }
 
 // ---------------------------
+
+header {
+  width: auto;
+  height: 5rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-family: "PressStart2P-Regular";
+  @include flex(flex, center, center);
+}
+
+ul {
+  @include flex(flex, center, center);
+}
+
+li {
+  width: 15rem;
+  height: 3.5rem;
+  padding: 0 3rem 0 3rem;
+  opacity: 0.6;
+  cursor: pointer;
+  @include flex(flex, center, center);
+}
+
+li:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  color: yellow;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #ffffff45;
+  opacity: 1;
+  @include flex(flex, center, center);
+}

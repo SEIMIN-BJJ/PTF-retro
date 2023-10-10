@@ -143,17 +143,57 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain article footer {
-  width: 100rem;
-  margin-bottom: -46rem;
-  position: absolute;
-  background-image: url("../../../../public/block.png");
-  background-size: contain;
-  background-position: center center;
+#PortMain .workText {
+  width: 50rem;
+  height: 8.5rem;
+  color: #fff;
+  border: 1px solid black;
+  font-family: "PressStart2P-Regular";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
+}
+#PortMain a {
+  color: #fff;
+}
+#PortMain .workMain:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  color: yellow;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2705882353);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PortMain a:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  color: yellow;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2705882353);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workTv {
+  width: 50rem;
+  height: 8rem;
+  color: #fff;
+  border: 1px solid black;
+  font-family: "PressStart2P-Regular";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
