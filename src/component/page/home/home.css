@@ -194,6 +194,7 @@ body {
   color: yellow;
 }
 .mask .text {
+  transform: translateX(0);
   animation: text 3s ease infinite alternate;
 }
 

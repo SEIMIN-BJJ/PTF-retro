@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 
 const transition = {
-  duration: 2,
-  ease: [0.6, -0.05, 0.01, 0.9],
+  duration: 1.5,
+  ease: [0.6, -0.05, 0.01, 1],
 }
 
 const textReveal = {
@@ -16,7 +16,18 @@ const textReveal = {
     opacity: 0,
   },
   animate: {
-    x: "0%",
+    x: "00%",
+    opacity: 1,
+  },
+};
+
+const picReveal = {
+  initial: {
+    y: "-200%",
+    opacity: 0,
+  },
+  animate: {
+    y: "00%",
     opacity: 1,
   },
 };
@@ -81,7 +92,7 @@ const MainSecond = () => {
               <main>
                 <div className="MainInfo">
                   <motion.div
-                    variants={textReveal}
+                    variants={picReveal}
                     initial="initial"
                     animate="animate"
                     transition={transition}>

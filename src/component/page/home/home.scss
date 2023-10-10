@@ -97,7 +97,7 @@ body {
   color: yellow;
 
   .text {
-    // transform: translateX(0);
+    transform: translateX(0);
     animation: text 3s ease infinite alternate;
   }
 }

@@ -42,30 +42,38 @@
       height: auto !important;
       flex-direction: column;
       text-transform: uppercase;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: auto;
       @include flex(flex, center, center);
 
       header {
         width: 100rem;
         height: 5rem;
         color: #fff;
-        letter-spacing: 0.3rem;
+        letter-spacing: 0.2rem;
         @include flex(flex, center, center);
       }
 
       .headMenu {
         font-family: "PressStart2P-Regular";
-        cursor: pointer;
       }
 
       li {
-        margin: 0 3rem;
+        width: auto;
+        height: 4rem;
+        padding: 0 3rem 0 3rem;
+        opacity: 0.6;
+        cursor: pointer;
+        @include flex(flex, center, center);
       }
 
       li:hover {
+        border: 4px solid rgb(255, 255, 255);
+        border-radius: 10px;
         color: yellow;
+        font-size: 1.2rem;
+        text-align: center;
+        background-color: #ffffff45;
+        opacity: 1;
+        @include flex(flex, center, center);
       }
 
       main {
@@ -77,6 +85,7 @@
         width: 100rem;
         height: 37rem;
         color: #fff;
+        border-top: 2px solid #fff;
         @include flex(flex, space-between, center);
 
         div {
@@ -85,7 +94,7 @@
         }
 
         .MainPic {
-          margin-left: 8rem;
+          margin: 0 5rem;
           background-image: url(../../../../public/me.png);
           background-position: center center;
           background-repeat: no-repeat;
@@ -94,15 +103,16 @@
 
         .MainText {
           font-size: 2rem;
-          margin-left: -4rem;
+          margin: 0 0 0 -5rem;
           text-align: left;
           font-family: "PressStart2P-Regular";
-          cursor: pointer;
+          opacity: 0.6;
           @include flex(flex, center, center);
         }
 
         .MainText:hover {
           color: yellow;
+          opacity: 1;
         }
       }
 
