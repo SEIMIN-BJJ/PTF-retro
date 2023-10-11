@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import Header from '../../block/Header/Header';
 import Footer from '../../block/Footer/Footer';
 import { Link } from 'react-router-dom';
-import HoverImg from '../../../assets/images/main.png'
-import navImg from '../../../assets/images/sound novel.png'
 import "./Work.scss"
 
 const transition = {
@@ -34,9 +32,15 @@ const picReveal = {
   },
 };
 
+
 const Work = () => {
 
-  const [isHovered, setIsHovered] = useState(false);
+  const images = [
+    { id: 1, src: 'image1.jpg', alt: 'Image 1' },
+    { id: 2, src: 'image2.jpg', alt: 'Image 2' },
+    { id: 3, src: 'image3.jpg', alt: 'Image 3' },
+  ];
+  const [isListHover, setIsListHover] = useState(false);
 
   return (
     <>
@@ -62,13 +66,15 @@ const Work = () => {
                     initial="initial"
                     animate="animate"
                     transition={transition}>
+
                     <Link to="/mainsecond">
                       <button className="workText"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}>
+                        onMouseOver={() => setIsListHover(true)}
+                        onMouseOut={() => setIsListHover(false)}>
                         main
                       </button>
                     </Link>
+
                     <a className='workText' href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a>
 
                     <a className='workText' href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
@@ -82,13 +88,15 @@ const Work = () => {
                     animate="animate"
                     transition={transition}>
                     <div className="workTv">
-                      <img
-                        src={isHovered ? navImg : HoverImg}
-                        alt=""
-                      />
+                      {images.map((image) => (
+                        <img
+                          key={image.id}
+                          src={image.id && isListHover ? `hovered_${image.src}` : image.src}
+                          alt={image.alt}
+                        />
+                      ))}
                     </div>
                   </motion.div>
-
                 </div>
               </main>
             </div>
