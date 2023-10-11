@@ -52,6 +52,10 @@ const MainSecond = () => {
             <div className="mainBack">
               <Header />
               <main>
+                <div className="mario">
+                  <video src="videos/game.mp4" muted autoPlay loop>
+                  </video>
+                </div>
                 <div className="MainInfo">
                   <motion.div
                     variants={picReveal}
@@ -79,5 +83,3 @@ const MainSecond = () => {
 };
 
 export default MainSecond;
-
-

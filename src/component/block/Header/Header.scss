@@ -29,11 +29,12 @@
 // ---------------------------
 
 header {
-  width: auto;
+  width: 100rem;
   height: 5rem;
   color: #fff;
   letter-spacing: 0.2rem;
   font-family: "PressStart2P-Regular";
+  border-bottom: 3px dotted #fff;
   @include flex(flex, center, center);
 }
 
