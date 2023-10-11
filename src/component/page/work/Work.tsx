@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Header from '../../block/Header/Header';
 import Footer from '../../block/Footer/Footer';
 import { Link } from 'react-router-dom';
+import HoverImg from '../../../assets/images/main.png'
+import navImg from '../../../assets/images/sound novel.png'
 import "./Work.scss"
 
 const transition = {
@@ -80,13 +82,10 @@ const Work = () => {
                     animate="animate"
                     transition={transition}>
                     <div className="workTv">
-                      <div>
-                        {isHovered ? (
-                          <img src="이미지_파일_경로_호버_상태" alt="호버 이미지" />
-                        ) : (
-                          <img src="이미지_파일_경로_일반_상태" alt="일반 이미지" />
-                        )}
-                      </div>
+                      <img
+                        src={isHovered ? navImg : HoverImg}
+                        alt=""
+                      />
                     </div>
                   </motion.div>
 
