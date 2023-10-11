@@ -170,9 +170,12 @@ section {
   align-items: center;
 }
 #PortMain .workTv {
-  width: 50rem;
+  width: 47.7rem;
   height: 30rem;
   color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 3px solid rgb(255, 255, 255);
   display: flex;
   justify-content: center;
