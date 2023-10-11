@@ -31,7 +31,7 @@
 .Footer {
   width: 100rem;
   height: 3rem;
-  background-image: url("../../../../public/block.png");
+  background-image: url("../../../assets/images/block.png");
   background-size: contain;
   background-position: center center;
   @include flex(flex, center, center);

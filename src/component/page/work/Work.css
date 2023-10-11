@@ -152,6 +152,7 @@ section {
   text-transform: uppercase;
   text-align: center;
   opacity: 0.6;
+  margin: 0 5rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,14 +170,10 @@ section {
   align-items: center;
 }
 #PortMain .workTv {
-  width: 10vw;
-  height: 10vh;
+  width: 50rem;
+  height: 30rem;
   color: #fff;
-  border: 1px solid black;
-  font-family: "PressStart2P-Regular";
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  text-align: center;
+  border: 3px solid rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;

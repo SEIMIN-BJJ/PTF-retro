@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import Header from '../../block/Header/Header';
 import Footer from '../../block/Footer/Footer';
 import { Link } from 'react-router-dom';
-
 import "./Work.scss"
 
 const transition = {
@@ -35,6 +34,8 @@ const picReveal = {
 
 const Work = () => {
 
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <>
       <section id="PortMain">
@@ -60,7 +61,9 @@ const Work = () => {
                     animate="animate"
                     transition={transition}>
                     <Link to="/mainsecond">
-                      <button className="workText">
+                      <button className="workText"
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}>
                         main
                       </button>
                     </Link>
@@ -76,7 +79,15 @@ const Work = () => {
                     initial="initial"
                     animate="animate"
                     transition={transition}>
-                    <div className="workTv">sdfsd</div>
+                    <div className="workTv">
+                      <div>
+                        {isHovered ? (
+                          <img src="이미지_파일_경로_호버_상태" alt="호버 이미지" />
+                        ) : (
+                          <img src="이미지_파일_경로_일반_상태" alt="일반 이미지" />
+                        )}
+                      </div>
+                    </div>
                   </motion.div>
 
                 </div>

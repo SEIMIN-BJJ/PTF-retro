@@ -32,7 +32,7 @@ const Contact = () => {
               <>
                 <button className="MainFocus" onClick={() => navigate(work.route)}>{work.title}</button>
                 <button>
-                  <a href="https://seimin-bjj.github.io/Sound-Novel/" className='MainFocus'>youtube</a>
+                  <a href="https://www.youtube.com/@seimin00" className='MainFocus'>youtube</a>
                 </button>
 
                 <button>
