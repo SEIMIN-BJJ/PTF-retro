@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import Header from '../../block/Header/Header';
 import Footer from '../../block/Footer/Footer';
 import { Link } from 'react-router-dom';
 import "./Work.scss"
+import MainImg from "../../../assets/images/main.png";
+import SNImg from "../../../assets/images/sound novel.png";
 
 const transition = {
   duration: 1.5,
@@ -36,9 +38,8 @@ const picReveal = {
 const Work = () => {
 
   const images = [
-    { id: 1, src: '../../../assets/images/main.png', alt: 'Image 1' },
-    { id: 2, src: 'image2.jpg', alt: 'Image 2' },
-    { id: 3, src: 'image3.jpg', alt: 'Image 3' },
+    { id: 1, img: MainImg, hoverImg: SNImg, alt: 'Image 1' },
+    // { id: 2, img: SNImg, hoverImg: MainImg, alt: 'Image 2' },
   ];
   const [isListHover, setIsListHover] = useState(false);
 
@@ -68,18 +69,25 @@ const Work = () => {
                     transition={transition}>
 
                     <Link to="/mainsecond">
-                      <button className="workText"
-                        onMouseOver={() => setIsListHover(true)}
-                        onMouseOut={() => setIsListHover(false)}>
+                      <button className="workText">
                         main
                       </button>
                     </Link>
 
-                    <a className='workText' href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a>
+                    <a className='workText'
+                      onMouseEnter={() => setIsListHover(true)}
+                      onMouseLeave={() => setIsListHover(false)}
+                      href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a>
 
-                    <a className='workText' href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
+                    <a className='workText'
+                      onMouseEnter={() => setIsListHover(true)}
+                      onMouseLeave={() => setIsListHover(false)}
+                      href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
 
-                    <a className='workText' href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a>
+                    <a className='workText'
+                      onMouseEnter={() => setIsListHover(true)}
+                      onMouseLeave={() => setIsListHover(false)}
+                      href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a>
                   </motion.div>
 
                   <motion.div
@@ -91,9 +99,8 @@ const Work = () => {
                       {images.map((image) => (
                         <img
                           key={image.id}
-                          src={image.id && isListHover ? `hovered_${image.src}` : image.src}
-                          alt={image.alt}
-                        />
+                          src={isListHover ? image.hoverImg : image.img}
+                          alt={image.alt} />
                       ))}
                     </div>
                   </motion.div>
