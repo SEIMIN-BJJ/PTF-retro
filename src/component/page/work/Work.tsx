@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import "./Work.scss"
 import MainImg from "../../../assets/images/main.png";
 import SNImg from "../../../assets/images/sound novel.png";
+import MeImg from "../../../assets/images/me.png";
 
 const transition = {
   duration: 1.5,
@@ -38,10 +39,10 @@ const picReveal = {
 const Work = () => {
 
   const images = [
-    { id: 1, img: MainImg, hoverImg: SNImg, alt: 'Image 1' },
-    // { id: 2, img: SNImg, hoverImg: MainImg, alt: 'Image 2' },
+    { id: 1, img: MainImg, alt: 'Image 1' },
   ];
   const [isListHover, setIsListHover] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(MainImg);
 
   return (
     <>
@@ -69,23 +70,35 @@ const Work = () => {
                     transition={transition}>
 
                     <Link to="/mainsecond">
-                      <button className="workText">
-                        main
-                      </button>
+                      <button className='workText'
+                        onMouseEnter={() => {
+                          setIsListHover(true);
+                          setSelectedImage(MainImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(false)}
+                      >main</button>
                     </Link>
-
                     <a className='workText'
-                      onMouseEnter={() => setIsListHover(true)}
-                      onMouseLeave={() => setIsListHover(false)}
+                      onMouseEnter={() => {
+                        setIsListHover(false);
+                        setSelectedImage(SNImg);
+                      }}
+                      onMouseLeave={() => setIsListHover(true)}
                       href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a>
 
                     <a className='workText'
-                      onMouseEnter={() => setIsListHover(true)}
-                      onMouseLeave={() => setIsListHover(false)}
+                      onMouseEnter={() => {
+                        setIsListHover(false);
+                        setSelectedImage(MeImg);
+                      }}
+                      onMouseLeave={() => setIsListHover(true)}
                       href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
 
                     <a className='workText'
-                      onMouseEnter={() => setIsListHover(true)}
+                      onMouseEnter={() => {
+                        setIsListHover(true);
+                        setSelectedImage(MainImg); // 다른 이미지로 변경
+                      }}
                       onMouseLeave={() => setIsListHover(false)}
                       href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a>
                   </motion.div>
@@ -99,8 +112,9 @@ const Work = () => {
                       {images.map((image) => (
                         <img
                           key={image.id}
-                          src={isListHover ? image.hoverImg : image.img}
-                          alt={image.alt} />
+                          src={isListHover ? image.img : selectedImage}
+                          alt={image.alt}
+                        />
                       ))}
                     </div>
                   </motion.div>
