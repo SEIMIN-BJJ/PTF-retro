@@ -55,7 +55,10 @@ const Contact = () => {
                     </button>
                   </Link>
                   <button>
-                    <a href="https://www.youtube.com/@seimin00" className='contactText'
+                    <a href="https://www.youtube.com/@seimin00"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className='contactText'
                       onMouseEnter={() => {
                         setIsyoutubeHover(false);
                       }}
@@ -68,7 +71,10 @@ const Contact = () => {
                   </button>
 
                   <button>
-                    <a href="tel:01064185624" className='contactText'
+                    <a href="tel:01064185624"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className='contactText'
                       onMouseEnter={() => {
                         setIsphoneListHover(false);
                       }}
@@ -81,7 +87,10 @@ const Contact = () => {
                   </button>
 
                   <button>
-                    <a href="mailto:interkp12@gmail.com" className='contactText'
+                    <a href="mailto:interkp12@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className='contactText'
                       onMouseEnter={() => {
                         setIsemailListHover(false);
                       }}
