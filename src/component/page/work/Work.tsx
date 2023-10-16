@@ -43,7 +43,7 @@ const Work = () => {
     { id: 1, img: SelectIMG, alt: 'Image 1' },
   ];
   const [isListHover, setIsListHover] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(SelectIMG);
+  const [selectedImage, setSelectedImage] = useState(MainImg);
 
   return (
     <>
@@ -71,13 +71,7 @@ const Work = () => {
                     transition={transition}>
 
                     <Link to="/mainsecond">
-                      {/* <button className='workText'
-                        onMouseEnter={() => {
-                          setIsListHover(true);
-                          setSelectedImage(MainImg);
-                        }}
-                        onMouseLeave={() => setIsListHover(false)}
-                      >main</button> */}
+
                       <a className='workText'
                         onMouseEnter={() => {
                           setIsListHover(false);

@@ -144,7 +144,7 @@ section {
   align-items: center;
 }
 #PortMain .workText {
-  width: 28rem;
+  width: 30rem;
   height: 7rem;
   color: #fff;
   font-family: "PressStart2P-Regular";
@@ -177,7 +177,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   border: 3px solid rgb(255, 255, 255);
-  box-shadow: 5px 5px 1px rgba(255, 255, 255, 0.499);
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
