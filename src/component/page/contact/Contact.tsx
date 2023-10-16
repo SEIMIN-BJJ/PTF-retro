@@ -12,7 +12,9 @@ const ContactMenu = [
 
 const Contact = () => {
   const navigate = useNavigate();
-  const [isListHover, setIsListHover] = useState(true);
+  const [isyoutubetHover, setIsyoutubeHover] = useState(true);
+  const [isphoneListHover, setIsphoneListHover] = useState(true);
+  const [isemailListHover, setIsemailListHover] = useState(true);
 
   return (
     <section id="PortMain">
@@ -34,21 +36,36 @@ const Contact = () => {
                 <div className="Contact">
                   <button className="contactText" onClick={() => navigate(work.route)}>{work.title}</button>
                   <button>
-                    <a href="https://www.youtube.com/@seimin00" className='contactText' onMouseEnter={() => {
-                      setIsListHover(false);
-                    }}
-                      onMouseLeave={() => setIsListHover(true)}
+                    <a href="https://www.youtube.com/@seimin00" className='contactText'
+                      onMouseEnter={() => {
+                        setIsyoutubeHover(false);
+                      }}
+                      onMouseLeave={() => setIsyoutubeHover(true)}
                       style={{
-                        color: isListHover ? '#fff' : '#da3a31',
+                        color: isyoutubetHover ? '#fff' : '#da3a31',
                       }}>youtube</a>
                   </button>
 
                   <button>
-                    <a href='/' className='contactText'>phone number</a>
+                    <a href='/' className='contactText'
+                      onMouseEnter={() => {
+                        setIsphoneListHover(false);
+                      }}
+                      onMouseLeave={() => setIsphoneListHover(true)}
+                      style={{
+                        color: isphoneListHover ? '#fff' : '#857675',
+                      }}>phone number</a>
                   </button>
 
                   <button>
-                    <a href="/" className='contactText'>e-mail</a>
+                    <a href="/" className='contactText'
+                      onMouseEnter={() => {
+                        setIsemailListHover(false);
+                      }}
+                      onMouseLeave={() => setIsemailListHover(true)}
+                      style={{
+                        color: isemailListHover ? '#fff' : '#180403',
+                      }}>e-mail</a>
                   </button>
                   <footer></footer>
                 </div>
