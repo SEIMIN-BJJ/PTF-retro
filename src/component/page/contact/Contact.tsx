@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 import "./Contact.scss"
@@ -12,6 +12,7 @@ const ContactMenu = [
 
 const Contact = () => {
   const navigate = useNavigate();
+  const [isListHover, setIsListHover] = useState(true);
 
   return (
     <section id="PortMain">
@@ -30,19 +31,27 @@ const Contact = () => {
           {ContactMenu.map((work, index) => {
             return (
               <>
-                <button className="MainFocus" onClick={() => navigate(work.route)}>{work.title}</button>
-                <button>
-                  <a href="https://www.youtube.com/@seimin00" className='MainFocus'>youtube</a>
-                </button>
+                <div className="Contact">
+                  <button className="contactText" onClick={() => navigate(work.route)}>{work.title}</button>
+                  <button>
+                    <a href="https://www.youtube.com/@seimin00" className='contactText' onMouseEnter={() => {
+                      setIsListHover(false);
+                    }}
+                      onMouseLeave={() => setIsListHover(true)}
+                      style={{
+                        color: isListHover ? '#fff' : '#da3a31',
+                      }}>youtube</a>
+                  </button>
 
-                <button>
-                  <a href='/' className='MainFocus'>phone number</a>
-                </button>
+                  <button>
+                    <a href='/' className='contactText'>phone number</a>
+                  </button>
 
-                <button>
-                  <a href="/" className='MainFocus'>e-mail</a>
-                </button>
-                <footer></footer>
+                  <button>
+                    <a href="/" className='contactText'>e-mail</a>
+                  </button>
+                  <footer></footer>
+                </div>
               </>
             );
           })}

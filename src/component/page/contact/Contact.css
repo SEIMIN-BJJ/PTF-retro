@@ -143,17 +143,15 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain .MainWrapper {
-  position: absolute;
-  width: auto;
+#PortMain .Contact {
+  width: 100rem;
   height: auto;
-  white-space: nowrap;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#PortMain .MainFocus {
+#PortMain .Contact .contactText {
   width: auto;
   height: auto;
   text-transform: uppercase;
@@ -162,7 +160,6 @@ section {
   letter-spacing: 8px;
   font-size: 3rem;
   color: #ffffff;
-  flex-direction: column;
   margin: 2rem auto;
   text-align: center;
   filter: blur(1px);
@@ -170,7 +167,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain .MainFocus:hover {
+#PortMain .Contact .contactText:hover {
   color: yellow;
   filter: blur(0);
 }

@@ -27,3 +27,43 @@
 }
 
 // ---------------------------
+
+#PortMain {
+  @include flex(flex, center, center);
+
+  article {
+    max-width: 100rem;
+    height: auto !important;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    @include flex(flex, center, center);
+  }
+
+  .Contact {
+    width: 100rem;
+    height: auto;
+    flex-direction: column;
+    @include flex(flex, center, center);
+
+    .contactText {
+      width: auto;
+      height: auto;
+      text-transform: uppercase;
+      font-family: "PressStart2P-Regular";
+      font-weight: bold;
+      letter-spacing: 8px;
+      font-size: 3rem;
+      color: #ffffff;
+      margin: 2rem auto;
+      text-align: center;
+      filter: blur(1px);
+      @include flex(flex, center, center);
+    }
+
+    .contactText:hover {
+      color: yellow;
+      filter: blur(0);
+    }
+  }
+}

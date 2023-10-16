@@ -60,6 +60,7 @@
     color: #ffffff;
     flex-direction: column;
     margin: 2rem auto;
+    text-align: center;
     filter: blur(1px);
     @include flex(flex, center, center);
   }

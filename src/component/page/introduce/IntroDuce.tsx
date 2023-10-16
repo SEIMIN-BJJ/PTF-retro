@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { motion } from "framer-motion";
-import Footer from '../../block/Footer/Footer';
 import Header from '../../block/Header/Header';
+import Footer from '../../block/Footer/Footer';
 import { Link } from 'react-router-dom';
 import "./IntroDuce.scss"
+import SelectIMG from "../../../assets/images/select menu.png";
+import MainImg from "../../../assets/images/main.png";
+import SNImg from "../../../assets/images/sound novel.png";
+import MeImg from "../../../assets/images/me.png";
 
 const transition = {
   duration: 1.5,
@@ -33,9 +37,14 @@ const picReveal = {
 };
 
 const IntroDuce = () => {
+
+  const images = [
+    { id: 1, img: SelectIMG, alt: 'Image 1' },
+  ];
+  const [isListHover, setIsListHover] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(MainImg);
   return (
     <>
-
       <section id="PortMain">
         <article>
           <motion.div
@@ -50,6 +59,10 @@ const IntroDuce = () => {
             exit={{ y: window.innerHeight, opacity: 0 }}
           >
             <div className="mainBack">
+              <div className="mario">
+                <video src="videos/game.mp4" muted autoPlay loop>
+                </video>
+              </div>
               <Header />
               <main>
                 <div className="MainInfo">
@@ -58,16 +71,40 @@ const IntroDuce = () => {
                     initial="initial"
                     animate="animate"
                     transition={transition}>
+
                     <Link to="/mainsecond">
-                      <button className="workText">
-                        main
-                      </button>
+
+                      <a className='workText'
+                        onMouseEnter={() => {
+                          setIsListHover(false);
+                          setSelectedImage(MainImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(true)}
+                        href="/">Main</a>
                     </Link>
-                    <a className='workText' href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a>
+                    <a className='workText'
+                      onMouseEnter={() => {
+                        setIsListHover(false);
+                        setSelectedImage(SNImg);
+                      }}
+                      onMouseLeave={() => setIsListHover(true)}
+                      href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a>
 
-                    <a className='workText' href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
+                    <a className='workText'
+                      onMouseEnter={() => {
+                        setIsListHover(false);
+                        setSelectedImage(MeImg);
+                      }}
+                      onMouseLeave={() => setIsListHover(true)}
+                      href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
 
-                    <a className='workText' href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a>
+                    <a className='workText'
+                      onMouseEnter={() => {
+                        setIsListHover(false);
+                        setSelectedImage(MainImg);
+                      }}
+                      onMouseLeave={() => setIsListHover(true)}
+                      href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a>
                   </motion.div>
 
                   <motion.div
@@ -75,9 +112,16 @@ const IntroDuce = () => {
                     initial="initial"
                     animate="animate"
                     transition={transition}>
-                    <div className="workTv">sdfsd</div>
+                    <div className="workTv">
+                      {images.map((image) => (
+                        <img
+                          key={image.id}
+                          src={isListHover ? image.img : selectedImage}
+                          alt={image.alt}
+                        />
+                      ))}
+                    </div>
                   </motion.div>
-
                 </div>
               </main>
             </div>

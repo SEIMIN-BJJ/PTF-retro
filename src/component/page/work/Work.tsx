@@ -61,6 +61,10 @@ const Work = () => {
             exit={{ y: window.innerHeight, opacity: 0 }}
           >
             <div className="mainBack">
+              <div className="mario">
+                <video src="videos/game.mp4" muted autoPlay loop>
+                </video>
+              </div>
               <Header />
               <main>
                 <div className="MainInfo">
