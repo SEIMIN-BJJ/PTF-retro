@@ -4,6 +4,7 @@ import Header from '../../block/Header/Header';
 import Footer from '../../block/Footer/Footer';
 import { Link } from 'react-router-dom';
 import "./Work.scss"
+import SelectIMG from "../../../assets/images/select menu.png";
 import MainImg from "../../../assets/images/main.png";
 import SNImg from "../../../assets/images/sound novel.png";
 import MeImg from "../../../assets/images/me.png";
@@ -39,10 +40,10 @@ const picReveal = {
 const Work = () => {
 
   const images = [
-    { id: 1, img: MainImg, alt: 'Image 1' },
+    { id: 1, img: SelectIMG, alt: 'Image 1' },
   ];
   const [isListHover, setIsListHover] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(MainImg);
+  const [selectedImage, setSelectedImage] = useState(SelectIMG);
 
   return (
     <>
@@ -70,13 +71,20 @@ const Work = () => {
                     transition={transition}>
 
                     <Link to="/mainsecond">
-                      <button className='workText'
+                      {/* <button className='workText'
                         onMouseEnter={() => {
                           setIsListHover(true);
                           setSelectedImage(MainImg);
                         }}
                         onMouseLeave={() => setIsListHover(false)}
-                      >main</button>
+                      >main</button> */}
+                      <a className='workText'
+                        onMouseEnter={() => {
+                          setIsListHover(false);
+                          setSelectedImage(MainImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(true)}
+                        href="/">Main</a>
                     </Link>
                     <a className='workText'
                       onMouseEnter={() => {
@@ -96,10 +104,10 @@ const Work = () => {
 
                     <a className='workText'
                       onMouseEnter={() => {
-                        setIsListHover(true);
-                        setSelectedImage(MainImg); // 다른 이미지로 변경
+                        setIsListHover(false);
+                        setSelectedImage(MainImg);
                       }}
-                      onMouseLeave={() => setIsListHover(false)}
+                      onMouseLeave={() => setIsListHover(true)}
                       href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a>
                   </motion.div>
 
