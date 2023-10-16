@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./mainSec.scss";
 import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";
 import Footer from "../../block/Footer/Footer";
+
 // import { useNavigate } from 'react-router-dom';
 
 const transition = {
@@ -31,6 +32,8 @@ const picReveal = {
     opacity: 1,
   },
 };
+
+
 
 const MainSecond = () => {
 
@@ -83,3 +86,5 @@ const MainSecond = () => {
 };
 
 export default MainSecond;
+
+
