@@ -143,7 +143,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain .Contact {
+#PortMain article .Contact {
   width: 100rem;
   height: auto;
   flex-direction: column;
@@ -151,7 +151,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain .Contact .contactText {
+#PortMain article .Contact .contactText {
   width: auto;
   height: auto;
   text-transform: uppercase;
@@ -167,7 +167,34 @@ section {
   justify-content: center;
   align-items: center;
 }
-#PortMain .Contact .contactText:hover {
-  color: yellow;
+#PortMain article .Contact .contactText:hover {
   filter: blur(0);
+}
+#PortMain article .Contact .mainIcon {
+  font-size: 4.5rem;
+  margin: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PortMain article .Contact .youtubeIcon {
+  font-size: 4.5rem;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PortMain article .Contact .phoneIcon {
+  font-size: 3rem;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PortMain article .Contact .emailIcon {
+  font-size: 3rem;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

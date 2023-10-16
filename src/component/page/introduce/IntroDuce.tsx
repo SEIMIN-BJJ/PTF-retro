@@ -88,7 +88,7 @@ const IntroDuce = () => {
                         setSelectedImage(SNImg);
                       }}
                       onMouseLeave={() => setIsListHover(true)}
-                      href="https://seimin-bjj.github.io/Sound-Novel/">sound novel</a>
+                      href="https://seimin-bjj.github.io/Sound-Novel/">i am</a>
 
                     <a className='workText'
                       onMouseEnter={() => {
@@ -96,7 +96,7 @@ const IntroDuce = () => {
                         setSelectedImage(MeImg);
                       }}
                       onMouseLeave={() => setIsListHover(true)}
-                      href="https://seimin-bjj.github.io/Rock-Festival/">rock festival</a>
+                      href="https://seimin-bjj.github.io/Rock-Festival/">education</a>
 
                     <a className='workText'
                       onMouseEnter={() => {
@@ -104,7 +104,7 @@ const IntroDuce = () => {
                         setSelectedImage(MainImg);
                       }}
                       onMouseLeave={() => setIsListHover(true)}
-                      href="https://seimin-bjj.github.io/Toy-Project/">super famicom</a>
+                      href="https://seimin-bjj.github.io/Toy-Project/">skill</a>
                   </motion.div>
 
                   <motion.div

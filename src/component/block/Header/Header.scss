@@ -34,18 +34,18 @@ header {
   color: #fff;
   letter-spacing: 0.2rem;
   font-family: "PressStart2P-Regular";
-  // border-bottom: 3px dotted #fff;
   @include flex(flex, center, center);
 }
 
 ul {
+  margin: 2rem auto;
+  padding: 2rem auto;
   @include flex(flex, center, center);
 }
 
 li {
-  width: 14rem;
+  width: 13rem;
   height: 3.5rem;
-  padding: 0 3rem 0 3rem;
   opacity: 0.6;
   cursor: pointer;
   @include flex(flex, center, center);

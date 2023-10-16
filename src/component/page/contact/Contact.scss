@@ -38,32 +38,55 @@
     margin: 0;
     text-align: center;
     @include flex(flex, center, center);
-  }
 
-  .Contact {
-    width: 100rem;
-    height: auto;
-    flex-direction: column;
-    @include flex(flex, center, center);
-
-    .contactText {
-      width: auto;
+    .Contact {
+      width: 100rem;
       height: auto;
-      text-transform: uppercase;
-      font-family: "PressStart2P-Regular";
-      font-weight: bold;
-      letter-spacing: 8px;
-      font-size: 3rem;
-      color: #ffffff;
-      margin: 2rem auto;
-      text-align: center;
-      filter: blur(1px);
+      flex-direction: column;
       @include flex(flex, center, center);
-    }
 
-    .contactText:hover {
-      color: yellow;
-      filter: blur(0);
+      .contactText {
+        width: auto;
+        height: auto;
+        text-transform: uppercase;
+        font-family: "PressStart2P-Regular";
+        font-weight: bold;
+        letter-spacing: 8px;
+        font-size: 3rem;
+        color: #ffffff;
+        margin: 2rem auto;
+        text-align: center;
+        filter: blur(1px);
+        @include flex(flex, center, center);
+      }
+
+      .contactText:hover {
+        filter: blur(0);
+      }
+
+      .mainIcon {
+        font-size: 4.5rem;
+        margin: 0 1.5rem;
+        @include flex(flex, center, center);
+      }
+
+      .youtubeIcon {
+        font-size: 4.5rem;
+        margin: 0 1rem;
+        @include flex(flex, center, center);
+      }
+
+      .phoneIcon {
+        font-size: 3rem;
+        margin: 0 2rem;
+        @include flex(flex, center, center);
+      }
+
+      .emailIcon {
+        font-size: 3rem;
+        margin: 0 2rem;
+        @include flex(flex, center, center);
+      }
     }
   }
 }
