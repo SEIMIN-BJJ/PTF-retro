@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaYoutube } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { FaPaperPlane } from "react-icons/fa";
 import { FaGamepad } from "react-icons/fa";
 
-
-import "./Contact.scss"
+import "./Contact.scss";
 
 const ContactMenu = [
   {
     title: "main",
-    route: "/mainsecond"
-  }
-]
+    route: "/mainsecond",
+  },
+];
 
 const Contact = () => {
   const [ismainHover, setIsmainHover] = useState(true);
@@ -32,7 +31,7 @@ const Contact = () => {
           transition={{
             ease: "linear",
             duration: 0.7,
-            y: { duration: 1 }
+            y: { duration: 1 },
           }}
           exit={{ y: window.innerHeight, opacity: 0 }}
         >
@@ -42,74 +41,86 @@ const Contact = () => {
                 <div className="Contact">
                   <Link to="/mainsecond">
                     <button>
-                      <a href="/" className='contactText'
+                      <a
+                        href="/"
+                        className="contactText"
                         onMouseEnter={() => {
                           setIsmainHover(false);
                         }}
                         onMouseLeave={() => setIsmainHover(true)}
                         style={{
-                          color: ismainHover ? '#fff' : 'yellow',
-                        }}>
-                        <FaGamepad className='mainIcon' />
-                        main</a>
+                          color: ismainHover ? "#fff" : "yellow",
+                        }}
+                      >
+                        <FaGamepad className="mainIcon" />
+                        main
+                      </a>
                     </button>
                   </Link>
                   <button>
-                    <a href="https://www.youtube.com/@seimin00"
+                    <a
+                      href="https://www.youtube.com/@seimin00"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className='contactText'
+                      className="contactText"
                       onMouseEnter={() => {
                         setIsyoutubeHover(false);
                       }}
                       onMouseLeave={() => setIsyoutubeHover(true)}
                       style={{
-                        color: isyoutubetHover ? '#fff' : '#da3a31'
-                      }}>
-                      <FaYoutube className='youtubeIcon' />
-                      youtube</a>
+                        color: isyoutubetHover ? "#fff" : "#da3a31",
+                      }}
+                    >
+                      <FaYoutube className="youtubeIcon" />
+                      youtube
+                    </a>
                   </button>
 
                   <button>
-                    <a href="tel:01064185624"
+                    <a
+                      href="tel:01064185624"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className='contactText'
+                      className="contactText"
                       onMouseEnter={() => {
                         setIsphoneListHover(false);
                       }}
                       onMouseLeave={() => setIsphoneListHover(true)}
                       style={{
-                        color: isphoneListHover ? '#fff' : '#aeff00',
-                      }}>
-                      <FaPhone className='phoneIcon' />
-                      phone</a>
+                        color: isphoneListHover ? "#fff" : "#aeff00",
+                      }}
+                    >
+                      <FaPhone className="phoneIcon" />
+                      phone
+                    </a>
                   </button>
 
                   <button>
-                    <a href="mailto:interkp12@gmail.com"
+                    <a
+                      href="mailto:interkp12@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className='contactText'
+                      className="contactText"
                       onMouseEnter={() => {
                         setIsemailListHover(false);
                       }}
                       onMouseLeave={() => setIsemailListHover(true)}
                       style={{
-                        color: isemailListHover ? '#fff' : '#b3d4ff',
-                      }}>
-                      <FaPaperPlane className='emailIcon' />
-                      e-mail</a>
+                        color: isemailListHover ? "#fff" : "#b3d4ff",
+                      }}
+                    >
+                      <FaPaperPlane className="emailIcon" />
+                      e-mail
+                    </a>
                   </button>
-                  <footer></footer>
                 </div>
               </>
             );
           })}
-        </motion.div >
+        </motion.div>
       </article>
     </section>
-  )
-}
+  );
+};
 
 export default Contact;

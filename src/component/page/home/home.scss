@@ -30,6 +30,8 @@
 
 $target: rgb(255, 255, 255);
 body {
+  max-width: auto;
+  height: auto !important;
   background-color: #5d93fd;
   z-index: 1;
   @include flex(flex, center, center);

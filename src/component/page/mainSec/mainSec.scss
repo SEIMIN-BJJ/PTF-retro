@@ -32,12 +32,12 @@
   @include flex(flex, center, center);
 
   article {
-    max-width: 100rem;
+    max-width: auto;
     height: auto !important;
     @include flex(flex, center, center);
 
     .mainBack {
-      width: auto;
+      width: 64rem;
       height: auto !important;
       flex-direction: column;
       text-transform: uppercase;
