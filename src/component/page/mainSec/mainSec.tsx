@@ -1,10 +1,9 @@
 import React from "react";
-import "./mainSec.scss";
 import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";
 import Footer from "../../block/Footer/Footer";
-
-// import { useNavigate } from 'react-router-dom';
+import styled from "styled-components";
+import MeIMG from "../../../assets/images/me.png";
 
 const transition = {
   duration: 1.5,
@@ -36,7 +35,7 @@ const picReveal = {
 const MainSecond = () => {
   return (
     <>
-      <section id="PortMain">
+      <PortMain>
         <article>
           <motion.div
             className="MainWrapper"
@@ -49,56 +48,133 @@ const MainSecond = () => {
             }}
             exit={{ y: window.innerHeight, opacity: 0 }}
           >
-            <div className="mainBack">
-              <div className="mario">
+            <MainBackground>
+              <Mario>
                 <video src="videos/game.mp4" muted autoPlay loop></video>
-              </div>
+              </Mario>
               <Header />
-              <main>
-                <div className="MainInfo">
-                  <motion.div
-                    variants={picReveal}
-                    initial="initial"
-                    animate="animate"
-                    transition={transition}
-                  >
-                    <div className="MainPic"></div>
-                  </motion.div>
-                  <motion.div
-                    variants={textReveal}
-                    initial="initial"
-                    animate="animate"
-                    transition={transition}
-                  >
-                    <div className="MainText">
-                      welcome to <br />
-                      <br />
-                      my portfolio!
-                      <br />
-                      <br />
-                      <br />
-                      my name is <br />
-                      <br />
-                      lim sung min,
-                      <br />
-                      <br />
-                      <br />
-                      i'm web publisher,
-                      <br />
-                      <br />
-                      <br />
-                      please, look around!
-                    </div>
-                  </motion.div>
-                </div>
-              </main>
-            </div>
+              <MainInfo>
+                <motion.div
+                  variants={picReveal}
+                  initial="initial"
+                  animate="animate"
+                  transition={transition}
+                >
+                  <MainPic></MainPic>
+                </motion.div>
+                <motion.div
+                  variants={textReveal}
+                  initial="initial"
+                  animate="animate"
+                  transition={transition}
+                >
+                  <MainText>
+                    welcome to <br />
+                    <br />
+                    my portfolio!
+                    <br />
+                    <br />
+                    <br />
+                    my name is <br />
+                    <br />
+                    lim sung min,
+                    <br />
+                    <br />
+                    <br />
+                    i'm web publisher,
+                    <br />
+                    <br />
+                    <br />
+                    please, look around!
+                  </MainText>
+                </motion.div>
+              </MainInfo>
+            </MainBackground>
             <Footer />
           </motion.div>
         </article>
-      </section>
+      </PortMain>
     </>
   );
 };
 
+const PortMain = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const MainBackground = styled.div`
+  width: 64rem;
+  height: auto !important;
+  flex-direction: column;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  main {
+    width: auto;
+    height: 40rem;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+const Mario = styled.div`
+  width: 100%;
+  height: 45rem;
+  border: 1px solid #000000;
+  position: absolute;
+  opacity: 0.05;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+`;
+
+const MainInfo = styled.div`
+  width: auto;
+  height: 37rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const MainPic = styled.div`
+  width: 30rem;
+  height: 30rem;
+  background: url(${MeIMG});
+  background-position: top 10% right 20%;
+  background-repeat: no-repeat;
+  margin: 0 35rem 0 0;
+  flex-direction: column;
+`;
+
+const MainText = styled.div`
+  width: 30rem;
+  height: 30rem;
+  font-size: 1.8rem;
+  text-align: left;
+  font-family: "PressStart2P-Regular";
+  opacity: 0.6;
+  margin: 0 0 0 -25rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: yellow;
+    font-size: 1.9rem;
+    opacity: 1;
+  }
+`;
 export default MainSecond;
