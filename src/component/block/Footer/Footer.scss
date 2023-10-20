@@ -35,4 +35,5 @@
   background-size: contain;
   background-position: center center;
   @include flex(flex, center, center);
+  position: absolute;
 }

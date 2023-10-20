@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./mainSec.scss";
 import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";

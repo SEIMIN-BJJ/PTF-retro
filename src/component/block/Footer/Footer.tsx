@@ -1,7 +1,16 @@
 import React from "react";
-import "./Footer.scss";
+import styled from "styled-components";
+import BackIMG from "../../../assets/images/block.png";
 
 const Footer = () => {
-  return <footer className="Footer"></footer>;
+  return <Foot />;
 };
+
+const Foot = styled.div`
+  width: 100rem;
+  height: 3rem;
+  background: url(${BackIMG});
+  background-size: contain;
+  background-position: center center;
+`;
 export default Footer;
