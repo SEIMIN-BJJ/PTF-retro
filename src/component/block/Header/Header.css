@@ -128,29 +128,44 @@ section {
     font-size: 10px !important;
   }
 }
-#IntroDuceRoot {
-  max-width: 100rem;
-  height: auto !important;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#IntroDuceRoot .SectionInfo {
-  width: 40rem;
-  height: 30rem;
-  border: 5px solid #fff;
-  margin: 0 2rem 0 0;
+header {
+  width: 100rem;
+  height: 5rem;
   color: #fff;
-  text-align: center;
+  letter-spacing: 0.2rem;
+  font-family: "PressStart2P-Regular";
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#IntroDuceRoot .SectionInfo:hover {
-  border-color: yellow;
+
+ul {
+  margin: 2rem auto;
+  padding: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  width: 13rem;
+  height: 3.5rem;
+  opacity: 0.6;
   cursor: pointer;
-  filter: blur(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  color: yellow;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2705882353);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

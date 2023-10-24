@@ -128,29 +128,13 @@ section {
     font-size: 10px !important;
   }
 }
-#IntroDuceRoot {
-  max-width: 100rem;
-  height: auto !important;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+.Footer {
+  width: 100rem;
+  height: 3rem;
+  background-image: url("../../../assets/images/block.png");
+  background-size: contain;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#IntroDuceRoot .SectionInfo {
-  width: 40rem;
-  height: 30rem;
-  border: 5px solid #fff;
-  margin: 0 2rem 0 0;
-  color: #fff;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#IntroDuceRoot .SectionInfo:hover {
-  border-color: yellow;
-  cursor: pointer;
-  filter: blur(0);
 }

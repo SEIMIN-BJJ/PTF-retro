@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";
 import Footer from "../../block/Footer/Footer";
 import { Link } from "react-router-dom";
+import "./Work.scss";
 import SelectIMG from "../../../assets/images/select menu.png";
 import MainImg from "../../../assets/images/main.png";
 import SNImg from "../../../assets/images/sound novel.png";
 import MeImg from "../../../assets/images/me.png";
-import "./Work.scss";
 
 const transition = {
   duration: 1.5,

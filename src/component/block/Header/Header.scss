@@ -28,27 +28,35 @@
 
 // ---------------------------
 
-#IntroDuceRoot {
-  max-width: 100rem;
-  height: auto !important;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+header {
+  width: auto;
+  height: 5rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  font-family: "PressStart2P-Regular";
   @include flex(flex, center, center);
+}
 
-  .SectionInfo {
-    width: 40rem;
-    height: 30rem;
-    border: 5px solid #fff;
-    margin: 0 2rem 0 0;
-    color: #fff;
-    text-align: center;
-    @include flex(flex, center, center);
-  }
+ul {
+  padding: 2rem auto;
+  @include flex(flex, center, center);
+}
 
-  .SectionInfo:hover {
-    border-color: yellow;
-    cursor: pointer;
-    filter: blur(0);
-  }
+li {
+  width: 13rem;
+  height: 3.5rem;
+  opacity: 0.6;
+  cursor: pointer;
+  @include flex(flex, center, center);
+}
+
+li:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  color: yellow;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #ffffff45;
+  opacity: 1;
+  @include flex(flex, center, center);
 }

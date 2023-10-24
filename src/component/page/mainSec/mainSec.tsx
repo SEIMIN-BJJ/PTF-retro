@@ -1,8 +1,9 @@
 import React from "react";
-import "./mainSec.scss";
 import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";
 import Footer from "../../block/Footer/Footer";
+import TypeIt from "typeit-react";
+import "./mainSec.scss";
 
 // import { useNavigate } from 'react-router-dom';
 
@@ -71,23 +72,30 @@ const MainSecond = () => {
                     transition={transition}
                   >
                     <div className="MainText">
-                      welcome to <br />
-                      <br />
-                      my portfolio!
-                      <br />
-                      <br />
-                      <br />
-                      my name is <br />
-                      <br />
-                      lim sung min,
-                      <br />
-                      <br />
-                      <br />
-                      i'm web publisher,
-                      <br />
-                      <br />
-                      <br />
-                      please, look around!
+                      <TypeIt
+                        options={{ loop: true, speed: 80 }}
+                        getBeforeInit={(instance) => {
+                          instance
+                            .type(
+                              "welcome to<br /><br />my portfolio!<br /><br /><br /><br />my name is<br /><br /> lim sung min!"
+                            )
+                            .pause(750)
+                            .delete(14)
+                            .pause(500)
+                            .type("i'm web publisher!")
+                            .pause(750)
+                            .type(
+                              "<br /><br /><br /><br />please, look around!"
+                            )
+                            .pause(750)
+                            .delete(20)
+                            .pause(500)
+                            .type("and have fun!")
+                            .pause(750);
+
+                          return instance;
+                        }}
+                      />
                     </div>
                   </motion.div>
                 </div>

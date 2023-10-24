@@ -25,7 +25,6 @@
   border-width: ($px);
   border-color: ($col);
 }
-
 // ---------------------------
 
 #PortMain {
@@ -69,30 +68,27 @@
 
       .MainInfo {
         width: auto;
-        height: 37rem;
+        height: 30rem;
         color: #fff;
         @include flex(flex, center, center);
 
         .MainPic {
-          width: 30rem;
+          width: 40rem;
           height: 30rem;
           background-image: url("../../../assets/images/me.png");
-          background-position: top 10% right 20%;
+          background-position: top 10% center;
           background-repeat: no-repeat;
-          margin: 0 35rem 0 0;
           flex-direction: column;
         }
 
         .MainText {
-          width: 30rem;
+          width: 40rem;
           height: 30rem;
           font-size: 1.8rem;
           text-align: left;
           font-family: "PressStart2P-Regular";
           opacity: 0.6;
-          margin: 0 0 0 -25rem;
           flex-direction: column;
-          @include flex(flex, center, center);
         }
 
         .MainText:hover {
