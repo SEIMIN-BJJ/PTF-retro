@@ -90,7 +90,7 @@ const MainSecond = () => {
                             .pause(750)
                             .delete(20)
                             .pause(500)
-                            .type("and have fun!")
+                            .type("and have a nice day!")
                             .pause(750);
 
                           return instance;
