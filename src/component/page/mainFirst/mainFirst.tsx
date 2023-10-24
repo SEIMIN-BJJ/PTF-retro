@@ -1,6 +1,6 @@
 import React from "react";
 import "./mainFirst.scss";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const mainRoute = [
@@ -15,14 +15,12 @@ const mainRoute = [
   {
     title: "3.my work",
     route: "/work",
-
   },
   {
     title: "4.contact",
     route: "/contact",
-
-  }
-]
+  },
+];
 
 const MainFirst = () => {
   const navigate = useNavigate();
@@ -38,24 +36,27 @@ const MainFirst = () => {
             transition={{
               ease: "linear",
               duration: 1,
-              y: { duration: 1 }
+              y: { duration: 1 },
             }}
             exit={{ y: window.innerHeight, opacity: 0 }}
           >
             {mainRoute.map((main, index) => {
               return (
                 <>
-                  <button className="MainFocus" onClick={() => navigate(main.route)}>{main.title}</button>
+                  <button
+                    className="MainFocus"
+                    onClick={() => navigate(main.route)}
+                  >
+                    {main.title}
+                  </button>
                 </>
               );
             })}
-          </motion.div >
-        </article >
-      </section >
+          </motion.div>
+        </article>
+      </section>
     </>
   );
 };
 
 export default MainFirst;
-
-

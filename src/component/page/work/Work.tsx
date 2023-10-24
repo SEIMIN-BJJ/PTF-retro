@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";
 import Footer from "../../block/Footer/Footer";
@@ -63,68 +63,139 @@ const Work = () => {
               <Header />
               <main>
                 <div className="MainInfo">
-                  <motion.div
-                    variants={picReveal}
-                    initial="initial"
-                    animate="animate"
-                    transition={transition}
-                  >
-                    <Link to="/mainsecond">
+                  <div className="workScroll">
+                    <motion.div
+                      variants={picReveal}
+                      initial="initial"
+                      animate="animate"
+                      transition={transition}
+                    >
+                      <Link to="/mainsecond">
+                        <a
+                          className="workText"
+                          onMouseEnter={() => {
+                            setIsListHover(false);
+                            setSelectedImage(MainImg);
+                          }}
+                          onMouseLeave={() => setIsListHover(true)}
+                          href="/"
+                        >
+                          Main
+                        </a>
+                      </Link>
                       <a
                         className="workText"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseEnter={() => {
+                          setIsListHover(false);
+                          setSelectedImage(SNImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(true)}
+                        href="https://seimin-bjj.github.io/Sound-Novel/"
+                      >
+                        sound novel
+                      </a>
+
+                      <a
+                        className="workText"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseEnter={() => {
+                          setIsListHover(false);
+                          setSelectedImage(MeImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(true)}
+                        href="https://seimin-bjj.github.io/Rock-Festival/"
+                      >
+                        rock festival
+                      </a>
+
+                      <a
+                        className="workText"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         onMouseEnter={() => {
                           setIsListHover(false);
                           setSelectedImage(MainImg);
                         }}
                         onMouseLeave={() => setIsListHover(true)}
-                        href="/"
+                        href="https://seimin-bjj.github.io/Toy-Project/"
                       >
-                        Main
+                        super famicom
                       </a>
-                    </Link>
-                    <a
-                      className="workText"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onMouseEnter={() => {
-                        setIsListHover(false);
-                        setSelectedImage(SNImg);
-                      }}
-                      onMouseLeave={() => setIsListHover(true)}
-                      href="https://seimin-bjj.github.io/Sound-Novel/"
-                    >
-                      sound novel
-                    </a>
 
-                    <a
-                      className="workText"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onMouseEnter={() => {
-                        setIsListHover(false);
-                        setSelectedImage(MeImg);
-                      }}
-                      onMouseLeave={() => setIsListHover(true)}
-                      href="https://seimin-bjj.github.io/Rock-Festival/"
-                    >
-                      rock festival
-                    </a>
+                      <a
+                        className="workText"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseEnter={() => {
+                          setIsListHover(false);
+                          setSelectedImage(MainImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(true)}
+                        href="https://seimin-bjj.github.io/Toy-Project/"
+                      >
+                        super famicom
+                      </a>
 
-                    <a
-                      className="workText"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onMouseEnter={() => {
-                        setIsListHover(false);
-                        setSelectedImage(MainImg);
-                      }}
-                      onMouseLeave={() => setIsListHover(true)}
-                      href="https://seimin-bjj.github.io/Toy-Project/"
-                    >
-                      super famicom
-                    </a>
-                  </motion.div>
+                      <a
+                        className="workText"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseEnter={() => {
+                          setIsListHover(false);
+                          setSelectedImage(MainImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(true)}
+                        href="https://seimin-bjj.github.io/Toy-Project/"
+                      >
+                        super famicom
+                      </a>
 
+                      <a
+                        className="workText"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseEnter={() => {
+                          setIsListHover(false);
+                          setSelectedImage(MainImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(true)}
+                        href="https://seimin-bjj.github.io/Toy-Project/"
+                      >
+                        super famicom
+                      </a>
+
+                      <a
+                        className="workText"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseEnter={() => {
+                          setIsListHover(false);
+                          setSelectedImage(MainImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(true)}
+                        href="https://seimin-bjj.github.io/Toy-Project/"
+                      >
+                        super famicom
+                      </a>
+
+                      <a
+                        className="workText"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onMouseEnter={() => {
+                          setIsListHover(false);
+                          setSelectedImage(MainImg);
+                        }}
+                        onMouseLeave={() => setIsListHover(true)}
+                        href="https://seimin-bjj.github.io/Toy-Project/"
+                      >
+                        super famicom
+                      </a>
+                    </motion.div>
+                  </div>
                   <motion.div
                     variants={textReveal}
                     initial="initial"
