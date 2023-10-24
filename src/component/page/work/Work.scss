@@ -41,10 +41,8 @@
   }
 
   .workScroll {
-    height: 100rem;
     width: 40rem;
-    border: 1px solid black;
-    position: relative;
+    height: auto;
     @include flex(flex, center, center);
   }
 
