@@ -36,7 +36,7 @@
     @include flex(flex, center, center);
 
     .mainBack {
-      width: 63rem;
+      width: 100%;
       height: auto !important;
       flex-direction: column;
       text-transform: uppercase;
@@ -44,16 +44,16 @@
 
       main {
         width: auto;
-        height: 40rem;
+        height: 39rem;
         flex-direction: column;
         position: relative;
+
         @include flex(flex, center, center);
       }
 
       .mario {
         width: 100%;
         height: 45rem;
-        border: 1px solid #000000;
         position: absolute;
         opacity: 0.05;
         @include flex(flex, center, center);
@@ -62,7 +62,7 @@
       video {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         z-index: -1;
       }
 
