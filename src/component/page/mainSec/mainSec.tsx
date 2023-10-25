@@ -77,16 +77,14 @@ const MainSecond = () => {
                         getBeforeInit={(instance) => {
                           instance
                             .type(
-                              "welcome to<br /><br />my portfolio!<br /><br /><br /><br />my name is<br /><br /> lim sung min!"
+                              "<br />welcome to<br /><br />my portfolio!<br /><br /><br />my name is<br /><br /> lim sung min!"
                             )
                             .pause(750)
                             .delete(14)
                             .pause(500)
                             .type("i'm web publisher!")
                             .pause(750)
-                            .type(
-                              "<br /><br /><br /><br />please, look around!"
-                            )
+                            .type("<br /><br /><br />please, look around!")
                             .pause(750)
                             .delete(20)
                             .pause(500)
