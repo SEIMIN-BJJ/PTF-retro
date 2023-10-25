@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";
 import Footer from "../../block/Footer/Footer";
 import TypeIt from "typeit-react";
+import CloudAniMation from "../../Animation/CloudAniMation";
 import "./IntroDuce.scss";
 
 const transition = {
@@ -50,6 +51,7 @@ const IntroDuce = () => {
           >
             <div className="mainBack">
               <Header />
+              <CloudAniMation />
               <main>
                 <div className="MainInfo">
                   <motion.div
@@ -71,7 +73,7 @@ const IntroDuce = () => {
                             getBeforeInit={(instance) => {
                               instance
                                 .type(
-                                  "이 프로젝트들은 토이 프로젝트로써<br /><br />실제로 제작된 게임이 아닙니다.<br /><br />게임 기반으로 한 웹페이지 제작을 한 것이며<br /><br />동작구현은 되어 있지 않습니다."
+                                  "이 프로젝트들은 닌텐도 토이 프로젝트로써<br /><br />실제로 제작된 게임이 아닙니다.<br /><br />게임 기반으로 한 웹페이지 제작을 한 것이며<br /><br />동작구현은 되어 있지 않습니다."
                                 )
                                 .pause(750);
                               return instance;

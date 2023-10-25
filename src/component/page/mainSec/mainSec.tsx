@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";
 import Footer from "../../block/Footer/Footer";
 import TypeIt from "typeit-react";
+import CloudAniMation from "../../Animation/CloudAniMation";
 import "./mainSec.scss";
-
 // import { useNavigate } from 'react-router-dom';
 
 const transition = {
@@ -52,6 +52,7 @@ const MainSecond = () => {
           >
             <div className="mainBack">
               <Header />
+              <CloudAniMation />
               <main>
                 <div className="MainInfo">
                   <motion.div

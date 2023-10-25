@@ -40,10 +40,11 @@
       height: auto !important;
       flex-direction: column;
       text-transform: uppercase;
-      background-image: url(../../../assets//images/Super-Mario-Nintendo-retro-games-artwork-video-games-1360133-wallhere.com.jpg);
-      background-position: top 2% center;
+      background-image: url(../../../assets//images/landscape-digital-art-pixel-art-water-nature-grass-20358-wallhere.com.png);
+      background-position: top 10% center;
       background-repeat: no-repeat;
       background-size: cover;
+      z-index: -2;
       @include flex(flex, center, center);
 
       main {
@@ -68,7 +69,7 @@
           background-repeat: no-repeat;
           background-size: contain;
           z-index: -10;
-          margin: 0 5rem 7rem 2rem;
+          margin: 0 5rem 3em 2rem;
           @include flex(flex, center, center);
         }
         .videoLock {
@@ -100,12 +101,11 @@
           text-align: left;
           font-family: "PressStart2P-Regular";
           flex-direction: column;
-          font-weight: bold;
           text-align: left;
           padding: 30px;
           margin-bottom: 5rem;
-          color: rgb(255, 255, 0);
-          -webkit-text-stroke: 10px #ffffff44;
+          color: rgb(18, 59, 134);
+          -webkit-text-stroke: 1px rgb(255, 255, 255);
         }
       }
     }
