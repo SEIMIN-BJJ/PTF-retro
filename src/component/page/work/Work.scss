@@ -42,7 +42,7 @@
 
   .workScroll {
     width: 40rem;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
     position: relative;
     @include flex(flex, center, center);
   }
@@ -55,7 +55,7 @@
     font-size: 1.4rem;
     text-transform: uppercase;
     opacity: 0.6;
-    margin: 0 5rem 0 0;
+    margin: 0 15rem 0 0;
     flex-direction: column;
     @include flex(flex, center, center);
   }
@@ -63,7 +63,8 @@
   .workText:hover {
     border: 3px solid #fff;
     border-radius: 3px;
-    color: yellow;
+    color: rgb(18, 59, 134);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
     font-size: 2rem;
     text-align: center;
     background-color: #ffffff45;
@@ -72,15 +73,21 @@
   }
 
   .workTv {
-    width: 860px;
-    height: 545px;
+    width: 24rem;
+    height: 30rem;
     color: #fff;
+    background-image: url(../../../assets/images/crttv.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    border: 3px solid rgb(255, 255, 255);
+    background-size: contain;
     border-radius: 3px;
-    margin-bottom: 8rem;
+    margin: 0 0 7rem 0;
     @include flex(flex, center, center);
+
+    img {
+      width: auto;
+      height: 12rem;
+      margin-bottom: 8.3rem;
+    }
   }
 }

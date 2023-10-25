@@ -46,7 +46,7 @@
   text-align: center;
   padding: 50px;
   letter-spacing: 5px;
-  color: rgb(255, 255, 0);
-  -webkit-text-stroke: 10px #ffffff44;
+  color: rgb(18, 59, 134);
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
   @include flex(flex, center, center);
 }
