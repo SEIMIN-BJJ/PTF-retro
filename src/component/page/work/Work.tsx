@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";
 import Footer from "../../block/Footer/Footer";
@@ -109,76 +109,6 @@ const Work = () => {
                         href="https://seimin-bjj.github.io/Rock-Festival/"
                       >
                         rock festival
-                      </a>
-
-                      <a
-                        className="workText"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onMouseEnter={() => {
-                          setIsListHover(false);
-                          setSelectedImage(MainImg);
-                        }}
-                        onMouseLeave={() => setIsListHover(true)}
-                        href="https://seimin-bjj.github.io/Toy-Project/"
-                      >
-                        super famicom
-                      </a>
-
-                      <a
-                        className="workText"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onMouseEnter={() => {
-                          setIsListHover(false);
-                          setSelectedImage(MainImg);
-                        }}
-                        onMouseLeave={() => setIsListHover(true)}
-                        href="https://seimin-bjj.github.io/Toy-Project/"
-                      >
-                        super famicom
-                      </a>
-
-                      <a
-                        className="workText"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onMouseEnter={() => {
-                          setIsListHover(false);
-                          setSelectedImage(MainImg);
-                        }}
-                        onMouseLeave={() => setIsListHover(true)}
-                        href="https://seimin-bjj.github.io/Toy-Project/"
-                      >
-                        super famicom
-                      </a>
-
-                      <a
-                        className="workText"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onMouseEnter={() => {
-                          setIsListHover(false);
-                          setSelectedImage(MainImg);
-                        }}
-                        onMouseLeave={() => setIsListHover(true)}
-                        href="https://seimin-bjj.github.io/Toy-Project/"
-                      >
-                        super famicom
-                      </a>
-
-                      <a
-                        className="workText"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onMouseEnter={() => {
-                          setIsListHover(false);
-                          setSelectedImage(MainImg);
-                        }}
-                        onMouseLeave={() => setIsListHover(true)}
-                        href="https://seimin-bjj.github.io/Toy-Project/"
-                      >
-                        super famicom
                       </a>
 
                       <a
