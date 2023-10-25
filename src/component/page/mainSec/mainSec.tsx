@@ -51,9 +51,6 @@ const MainSecond = () => {
             exit={{ y: window.innerHeight, opacity: 0 }}
           >
             <div className="mainBack">
-              <div className="mario">
-                <video src="videos/game.mp4" muted autoPlay loop></video>
-              </div>
               <Header />
               <main>
                 <div className="MainInfo">
@@ -63,7 +60,18 @@ const MainSecond = () => {
                     animate="animate"
                     transition={transition}
                   >
-                    <div className="MainPic"></div>
+                    <div className="MainPic">
+                      <div className="videoLock">
+                        <div className="mario">
+                          <video
+                            src="videos/game.mp4"
+                            muted
+                            autoPlay
+                            loop
+                          ></video>
+                        </div>
+                      </div>
+                    </div>
                   </motion.div>
                   <motion.div
                     variants={textReveal}
@@ -73,22 +81,22 @@ const MainSecond = () => {
                   >
                     <div className="MainText">
                       <TypeIt
-                        options={{ loop: true, speed: 80 }}
+                        options={{ loop: true, speed: 50 }}
                         getBeforeInit={(instance) => {
                           instance
                             .type(
-                              "<br />welcome to<br /><br />my portfolio!<br /><br /><br />my name is<br /><br /> lim sung min!"
+                              "welcome to<br /><br />my toy project!<br /><br /><br />this is project<br /><br /><br />sound novel!"
                             )
                             .pause(750)
-                            .delete(14)
+                            .delete(12)
                             .pause(500)
-                            .type("i'm web publisher!")
+                            .type("rock festival!")
                             .pause(750)
-                            .type("<br /><br /><br />please, look around!")
+                            .type("<br /><br /><br />and super famicom!")
                             .pause(750)
-                            .delete(20)
+                            .delete(18)
                             .pause(500)
-                            .type("and have a nice day!")
+                            .type("please, look around!")
                             .pause(750);
 
                           return instance;

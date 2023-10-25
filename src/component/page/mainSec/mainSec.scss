@@ -40,6 +40,10 @@
       height: auto !important;
       flex-direction: column;
       text-transform: uppercase;
+      background-image: url(../../../assets//images/Super-Mario-Nintendo-retro-games-artwork-video-games-1360133-wallhere.com.jpg);
+      background-position: top 10% center;
+      background-repeat: no-repeat;
+      background-size: cover;
       @include flex(flex, center, center);
 
       main {
@@ -50,22 +54,6 @@
         @include flex(flex, center, center);
       }
 
-      .mario {
-        width: 100%;
-        height: 35rem;
-        position: absolute;
-        opacity: 0.07;
-        margin: 3rem 0 auto;
-        @include flex(flex, center, center);
-      }
-
-      video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-      }
-
       .MainInfo {
         width: auto;
         height: 30rem;
@@ -73,12 +61,36 @@
         @include flex(flex, center, center);
 
         .MainPic {
-          width: 40rem;
-          height: 30rem;
-          background-image: url("../../../assets/images/me.png");
-          background-position: top 10% center;
+          width: 35rem;
+          height: 20rem;
+          background-image: url(../../../assets/images/gameboy_advance.png);
+          background-position: center center;
           background-repeat: no-repeat;
-          flex-direction: column;
+          background-size: contain;
+          z-index: -10;
+          margin: 0 5rem 7rem 2rem;
+          @include flex(flex, center, center);
+        }
+        .videoLock {
+          width: 15.5rem;
+          height: 10.5rem;
+          z-index: 10;
+          position: absolute;
+          margin: 0 0 2rem 0;
+          @include flex(flex, center, center);
+        }
+        .mario {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          @include flex(flex, center, center);
+        }
+
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
         }
 
         .MainText {
@@ -87,8 +99,13 @@
           font-size: 2rem;
           text-align: left;
           font-family: "PressStart2P-Regular";
-          color: yellow;
           flex-direction: column;
+          font-weight: bold;
+          text-align: left;
+          padding: 30px;
+          margin-bottom: 5rem;
+          color: rgb(255, 255, 0);
+          -webkit-text-stroke: 10px #ffffff44;
         }
       }
     }

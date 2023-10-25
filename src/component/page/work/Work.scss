@@ -42,6 +42,7 @@
 
   .workScroll {
     width: 40rem;
+    margin-bottom: 8rem;
     position: relative;
     @include flex(flex, center, center);
   }
@@ -54,7 +55,7 @@
     font-size: 1.4rem;
     text-transform: uppercase;
     opacity: 0.6;
-    margin: 0 3rem 0 0;
+    margin: 0 5rem 0 0;
     flex-direction: column;
     @include flex(flex, center, center);
   }
@@ -79,6 +80,7 @@
     background-size: cover;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 3px;
+    margin-bottom: 8rem;
     @include flex(flex, center, center);
   }
 }

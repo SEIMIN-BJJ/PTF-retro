@@ -29,7 +29,7 @@ const mainSecRoute = [
     route: "/introduce",
   },
   {
-    title: "my work",
+    title: "web game",
     route: "/work",
   },
   {
