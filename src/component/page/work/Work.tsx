@@ -132,13 +132,15 @@ const Work = () => {
                     transition={transition}
                   >
                     <div className="workTv">
-                      {images.map((image) => (
-                        <img
-                          key={image.id}
-                          src={isListHover ? image.img : selectedImage}
-                          alt={image.alt}
-                        />
-                      ))}
+                      <div className="workBroun">
+                        {images.map((image) => (
+                          <img
+                            key={image.id}
+                            src={isListHover ? image.img : selectedImage}
+                            alt={image.alt}
+                          />
+                        ))}
+                      </div>
                     </div>
                   </motion.div>
                 </div>
