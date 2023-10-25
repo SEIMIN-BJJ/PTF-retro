@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Header from "../../block/Header/Header";
 import Footer from "../../block/Footer/Footer";
-import { Link } from "react-router-dom";
+import TypeIt from "typeit-react";
 import "./IntroDuce.scss";
-import SelectIMG from "../../../assets/images/select menu.png";
-import MainImg from "../../../assets/images/main.png";
-import SNImg from "../../../assets/images/sound novel.png";
-import MeImg from "../../../assets/images/me.png";
 
 const transition = {
   duration: 1.5,
@@ -37,9 +33,6 @@ const picReveal = {
 };
 
 const IntroDuce = () => {
-  const images = [{ id: 1, img: SelectIMG, alt: "Image 1" }];
-  const [isListHover, setIsListHover] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(MainImg);
   return (
     <>
       <section id="PortMain">
@@ -60,75 +53,32 @@ const IntroDuce = () => {
               <main>
                 <div className="MainInfo">
                   <motion.div
-                    variants={picReveal}
-                    initial="initial"
-                    animate="animate"
-                    transition={transition}
-                  >
-                    <Link to="/mainsecond">
-                      <a
-                        className="workText"
-                        onMouseEnter={() => {
-                          setIsListHover(false);
-                          setSelectedImage(MainImg);
-                        }}
-                        onMouseLeave={() => setIsListHover(true)}
-                        href="/"
-                      >
-                        Main
-                      </a>
-                    </Link>
-                    <a
-                      className="workText"
-                      onMouseEnter={() => {
-                        setIsListHover(false);
-                        setSelectedImage(SNImg);
-                      }}
-                      onMouseLeave={() => setIsListHover(true)}
-                      href="https://seimin-bjj.github.io/Sound-Novel/"
-                    >
-                      i am
-                    </a>
-
-                    <a
-                      className="workText"
-                      onMouseEnter={() => {
-                        setIsListHover(false);
-                        setSelectedImage(MeImg);
-                      }}
-                      onMouseLeave={() => setIsListHover(true)}
-                      href="https://seimin-bjj.github.io/Rock-Festival/"
-                    >
-                      education
-                    </a>
-
-                    <a
-                      className="workText"
-                      onMouseEnter={() => {
-                        setIsListHover(false);
-                        setSelectedImage(MainImg);
-                      }}
-                      onMouseLeave={() => setIsListHover(true)}
-                      href="https://seimin-bjj.github.io/Toy-Project/"
-                    >
-                      skill
-                    </a>
-                  </motion.div>
-
-                  <motion.div
                     variants={textReveal}
                     initial="initial"
                     animate="animate"
                     transition={transition}
                   >
-                    <div className="workTv">
-                      {images.map((image) => (
-                        <img
-                          key={image.id}
-                          src={isListHover ? image.img : selectedImage}
-                          alt={image.alt}
-                        />
-                      ))}
+                    <div className="introDuceBox">
+                      <motion.div
+                        variants={picReveal}
+                        initial="initial"
+                        animate="animate"
+                        transition={transition}
+                      >
+                        <p className="introDuceText">
+                          <TypeIt
+                            options={{ loop: false, speed: 50 }}
+                            getBeforeInit={(instance) => {
+                              instance
+                                .type(
+                                  "이 프로젝트들은 토이 프로젝트로써<br /><br />실제로 제작된 게임이 아닙니다.<br /><br />게임 기반으로 한 웹페이지 제작을 한 것이며<br /><br />동작구현은 되어 있지 않습니다."
+                                )
+                                .pause(750);
+                              return instance;
+                            }}
+                          />
+                        </p>
+                      </motion.div>
                     </div>
                   </motion.div>
                 </div>

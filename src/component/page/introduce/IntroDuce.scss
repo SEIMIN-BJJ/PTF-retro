@@ -28,27 +28,25 @@
 
 // ---------------------------
 
-#IntroDuceRoot {
-  max-width: 100rem;
-  height: auto !important;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+.introDuceBox {
+  width: 40rem;
+  height: 30rem;
+  margin: 0 0 5rem 3rem;
   @include flex(flex, center, center);
+}
 
-  .SectionInfo {
-    width: 40rem;
-    height: 30rem;
-    border: 5px solid #fff;
-    margin: 0 2rem 0 0;
-    color: #fff;
-    text-align: center;
-    @include flex(flex, center, center);
-  }
-
-  .SectionInfo:hover {
-    border-color: yellow;
-    cursor: pointer;
-    filter: blur(0);
-  }
+.introDuceText {
+  width: 40rem;
+  height: 30rem;
+  font-size: 2rem;
+  text-align: left;
+  font-family: "Gmarket-bold";
+  flex-direction: column;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+  letter-spacing: 5px;
+  color: rgb(255, 255, 0);
+  -webkit-text-stroke: 10px #ffffff44;
+  @include flex(flex, center, center);
 }

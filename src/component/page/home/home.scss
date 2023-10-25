@@ -43,14 +43,14 @@ body {
   top: 5%;
   transform: translate(-50%, -50%);
   width: auto;
-  height: 70px;
+  height: 80px;
   white-space: nowrap;
   @include flex(flex, center, center);
 }
 
 .focus {
   top: 50%;
-  left: -150%;
+  left: -100%;
   transform: translateY(-50%);
   text-transform: uppercase;
   font-family: "PressStart2P-Regular";
@@ -73,7 +73,7 @@ body {
 
 .mask {
   width: 5rem;
-  height: 50px;
+  height: 60px;
   left: auto;
   top: -2.6rem;
   font-family: "PressStart2P-Regular";
