@@ -66,28 +66,27 @@
     color: rgb(18, 59, 134);
     -webkit-text-stroke: 1px rgb(255, 255, 255);
     font-size: 2rem;
-    text-align: center;
     background-color: #ffffff45;
     opacity: 1;
     @include flex(flex, center, center);
   }
 
   .workTv {
-    width: 24rem;
+    width: 30rem;
     height: 30rem;
     color: #fff;
-    background-image: url(../../../assets/images/crttv.png);
+    background-image: url(../../../assets/images/sony.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    border-radius: 3px;
     margin: 0 0 7rem 0;
     @include flex(flex, center, center);
 
     img {
-      width: auto;
-      height: 12rem;
-      margin-bottom: 8.3rem;
+      width: 22rem;
+      height: 17rem;
+      margin-top: 2rem;
+      position: relative;
     }
   }
 }
