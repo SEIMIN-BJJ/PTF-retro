@@ -62,11 +62,13 @@
 
       .contactText:hover {
         filter: blur(0);
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.857);
       }
 
       .mainIcon {
         font-size: 4.5rem;
         margin: 0 1.5rem;
+
         @include flex(flex, center, center);
       }
 
