@@ -51,7 +51,7 @@
     width: 30rem;
     height: 7rem;
     color: rgb(233, 248, 26);
-    -webkit-text-stroke: 2px rgb(26, 62, 168);
+    -webkit-text-stroke: 2px #689cf8;
     font-family: "PressStart2P-Regular";
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -64,8 +64,6 @@
   .workText:hover {
     border: 3px solid #fff;
     border-radius: 3px;
-    color: rgb(233, 248, 26);
-    -webkit-text-stroke: 2px rgb(26, 62, 168);
     font-size: 2rem;
     background-color: #ffffff45;
     opacity: 1;

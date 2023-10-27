@@ -1,16 +1,7 @@
 {
   "files": {
-<<<<<<< .merge_file_adpP0Q
-<<<<<<< HEAD
-    "main.css": "/PTF-retro/static/css/main.2f3ddb41.css",
-    "main.js": "/PTF-retro/static/js/main.aac874e6.js",
-=======
-    "main.css": "/PTF-retro/static/css/main.68036a24.css",
-=======
-    "main.css": "/PTF-retro/static/css/main.f9f21092.css",
->>>>>>> .merge_file_xkhULs
+    "main.css": "/PTF-retro/static/css/main.2ba4ca20.css",
     "main.js": "/PTF-retro/static/js/main.77280f6c.js",
->>>>>>> 7c0808f2e88fca5c03e980b9edb42e42b068b26f
     "static/js/787.cf905a28.chunk.js": "/PTF-retro/static/js/787.cf905a28.chunk.js",
     "static/media/Pretendard-Thin.ttf": "/PTF-retro/static/media/Pretendard-Thin.7aca4915b135693704c6.ttf",
     "static/media/Pretendard-ExtraLight.ttf": "/PTF-retro/static/media/Pretendard-ExtraLight.50a2b2a1b0307c05712d.ttf",
@@ -32,26 +23,12 @@
     "static/media/me.png": "/PTF-retro/static/media/me.a696c4a41c92a0c8d8ca.png",
     "static/media/block.png": "/PTF-retro/static/media/block.8019d5884fddab01cab2.png",
     "index.html": "/PTF-retro/index.html",
-<<<<<<< .merge_file_adpP0Q
-<<<<<<< HEAD
-    "main.2f3ddb41.css.map": "/PTF-retro/static/css/main.2f3ddb41.css.map",
-    "main.aac874e6.js.map": "/PTF-retro/static/js/main.aac874e6.js.map",
-    "787.cf905a28.chunk.js.map": "/PTF-retro/static/js/787.cf905a28.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.2f3ddb41.css",
-    "static/js/main.aac874e6.js"
-=======
-    "main.68036a24.css.map": "/PTF-retro/static/css/main.68036a24.css.map",
-=======
-    "main.f9f21092.css.map": "/PTF-retro/static/css/main.f9f21092.css.map",
->>>>>>> .merge_file_xkhULs
+    "main.2ba4ca20.css.map": "/PTF-retro/static/css/main.2ba4ca20.css.map",
     "main.77280f6c.js.map": "/PTF-retro/static/js/main.77280f6c.js.map",
     "787.cf905a28.chunk.js.map": "/PTF-retro/static/js/787.cf905a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9f21092.css",
+    "static/css/main.2ba4ca20.css",
     "static/js/main.77280f6c.js"
->>>>>>> 7c0808f2e88fca5c03e980b9edb42e42b068b26f
   ]
 }
