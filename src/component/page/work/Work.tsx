@@ -91,7 +91,7 @@ const Work = () => {
                           setSelectedImage(SNImg);
                         }}
                         onMouseLeave={() => setIsListHover(true)}
-                        href="https://seimin-bjj.github.io/Sound-Novel/"
+                        href="https://seimin-bjj.github.io/Sound-Novel-react/"
                       >
                         sound novel
                       </a>
